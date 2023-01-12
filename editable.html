@@ -1,1879 +1,69 @@
-<!DOCTYPE html>
-<html class="" lang="">
-   <head>
-      <script type="text/javascript" class="silex-json-styles" data-silex-static="">
-         window.silex = window.silex || {}
-         window.silex.data = {
-           "site": {"width": 1440},
-           "pages": [{
-             "id": "page-page-1",
-             "displayName": "Page 1",
-             "link": {"linkType": "LinkTypePage", "href": "#!page-page-1"},
-             "canDelete": true,
-             "canProperties": true,
-             "canMove": true,
-             "canRename": true,
-             "opened": false
-           }]
-         }
-      </script>
+<!DOCTYPE html><html class="" lang=""><head><script type="text/javascript" class="silex-json-styles" data-silex-static="">
+    window.silex = window.silex || {}
+    window.silex.data = {"site":{"width":1440},"pages":[{"id":"page-page-1","displayName":"Page 1","link":{"linkType":"LinkTypePage","href":"#!page-page-1"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false}]}</script>
+      
       <meta charset="UTF-8">
       <!-- generator meta tag -->
       <!-- leave this for stats and Silex version check -->
       <meta name="generator" content="Silex v2.2.14">
       <!-- End of generator meta tag -->
       <script type="text/javascript" src="https://editor.silex.me/static/2.12/jquery.js" data-silex-static=""></script>
-      <script type="text/javascript" src="https://editor.silex.me/static/2.12/jquery-ui.js" data-silex-static=""
-         data-silex-remove-publish=""></script>
-      <script type="text/javascript" src="https://editor.silex.me/static/2.12/pageable.js" data-silex-static=""
-         data-silex-remove-publish=""></script>
+      <script type="text/javascript" src="https://editor.silex.me/static/2.12/jquery-ui.js" data-silex-static="" data-silex-remove-publish=""></script>
+      <script type="text/javascript" src="https://editor.silex.me/static/2.12/pageable.js" data-silex-static="" data-silex-remove-publish=""></script>
       <script type="text/javascript" src="https://editor.silex.me/static/2.12/front-end.js" data-silex-static=""></script>
       <link rel="stylesheet" href="https://editor.silex.me/static/2.12/normalize.css" data-silex-static="">
       <link rel="stylesheet" href="https://editor.silex.me/static/2.12/front-end.css" data-silex-static="">
-      <style>
-         #hello-react {
-          left: 5%;
-          position: absolute;
-          top: 34%;
-        }
-         input[type=text], select {
-            width: 124% !important;
-            padding: 9px 0px !important;
-            margin: 7px 0px !important;
-         }
-         .job_list .jobs .button_group {
-            padding-left: 30px !important;
-            margin-top: 15px !important;
-        }
-      </style>
-      <style class="silex-style">.location-input {
-         box-sizing: border-box;
-         position: absolute;
-         background: #FCFCFC;
-         border: 1px solid #4C84C3;
-         border-radius: 10px 0px 0px 10px;
-         }
-         .search-input {
-         box-sizing: border-box;
-         position: absolute;
-         background: #FCFCFC;
-         border: 1px solid #4C84C3;
-         border-radius: 0px 10px 10px 0px;
-         }
-         .header-input-placeholder {
-         position: absolute;
-         font-family: 'Open Sans';
-         font-style: normal;
-         font-weight: 400;
-         font-size: 16px;
-         line-height: 22px;
-         letter-spacing: 0.0075em;
-         color: #AAB0B3;
-         }
-         .top-bar-menu {
-         position: absolute;
-         width: 93px;
-         height: 19px;
-         left: 847px;
-         top: 41px;
-         font-family: 'Open Sans';
-         font-style: normal;
-         font-weight: 400;
-         font-size: 14px;
-         line-height: 19px;
-         color: #545454;
-         }
-         .top-bar-btn {
-         box-sizing: border-box;
-         position: absolute;
-         width: 152px;
-         height: 32px;
-         left: 1252px;
-         top: 34px;
-         background: #FFFFFF;
-         border: 1px solid #4C84C3;
-         border-radius: 10px;
-         }
-         .top-bar-btn-label {
-         position: absolute;
-         width: 87px;
-         height: 18px;
-         left: 1285px;
-         top: 41px;
-         font-family: 'Open Sans';
-         font-style: normal;
-         font-weight: 400;
-         font-size: 13px;
-         line-height: 18px;
-         color: #4C84C3;
-         }
-         .text-decoration {
-         text-decoration: none;
-         }
-         .top-bar-logo {
-         position: absolute;
-         width: 85px;
-         height: 76px;
-         left: 70px;
-         top: 12px;
-         }
-         .h1-title {
-         position: absolute;
-         width: 409px;
-         height: 123px;
-         left: 824px;
-         top: 302px;
-         font-style: normal;
-         font-weight: 700;
-         font-size: 48px;
-         line-height: 56px;
-         text-align: center;
-         color: #4C84C3;
-         }
-         .book-consultation-btn {
-         box-sizing: border-box;
-         position: absolute;
-         width: 223px;
-         height: 37px;
-         left: 923px;
-         top: 459px;
-         background: #4C84C3;
-         border: 1px solid #4C84C3;
-         border-radius: 10px;
-         }
-         .book-consultation-btn-label {
-         position: absolute;
-         font-family: 'Open Sans';
-         font-style: normal;
-         font-weight: 700;
-         font-size: 13px;
-         line-height: 18px;
-         color: #FFFFFF;
-         }
-         .rectangle-simple {
-         position: absolute;
-         width: 53px;
-         height: 8px;
-         left: 1163px;
-         top: 700px;
-         border-radius: 5px;
-         }
-         .specialty-title {
-         position: absolute;
-         font-family: 'Open Sans';
-         font-style: normal;
-         font-weight: 600;
-         font-size: 30px;
-         line-height: 41px;
-         color: #000000;
-         }
-         .specialty-text {
-         position: absolute;
-         font-family: 'Open Sans';
-         font-style: normal;
-         font-weight: 400;
-         font-size: 20px;
-         line-height: 27px;
-         color: #555555;
-         }
-         .open-jobs-title {
-         position: absolute;
-         font-family: 'Mulish';
-         font-style: normal;
-         font-weight: 700;
-         font-size: 36px;
-         line-height: 56px;
-         color: #000000;
-         mix-blend-mode: normal;
-         }
-         .open-jobs-content {
-         position: absolute;
-         font-family: 'Mulish';
-         font-style: normal;
-         font-weight: 300;
-         font-size: 18px;
-         line-height: 30px;
-         text-align: center;
-         color: #7D7987;
-         mix-blend-mode: normal;
-         }
-         .job-card-title {
-         position: absolute;
-         font-family: 'Amazon Ember';
-         font-style: normal;
-         font-weight: 700;
-         font-size: 24px;
-         line-height: 150%;
-         color: #18181B;
-         }
-         .job-card-pay-rate {
-         position: absolute;
-         font-family: 'Amazon Ember';
-         font-style: normal;
-         font-weight: 400;
-         font-size: 24px;
-         line-height: 24px;
-         letter-spacing: -0.5px;
-         color: #3F3F46;
-         }
-         .job-card-company {
-         position: absolute;
-         font-family: 'Amazon Ember';
-         font-style: normal;
-         font-weight: 400;
-         font-size: 16px;
-         line-height: 150%;
-         color: #3F3F46;
-         }
-         .job-card-skill-label {
-         display: flex;
-         flex-direction: row;
-         align-items: center;
-         padding: 4px 8px;
-         gap: 10px;
-         position: absolute;
-         background: #EFF0F6;
-         border-radius: 7px;
-         }
-         .job-card-skill-text {
-         font-family: 'Amazon Ember';
-         font-style: normal;
-         font-weight: 400;
-         font-size: 14px;
-         line-height: 22px;
-         color: #1F1F1F;
-         flex: none;
-         order: 0;
-         flex-grow: 0;
-         }
-         .job-card-container {
-         position: absolute;
-         background: #FFFFFF;
-         box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
-         border-radius: 20px;
-         }
-         .why-title {
-         position: absolute;
-         font-family: 'Open Sans';
-         font-style: normal;
-         font-weight: 600;
-         font-size: 30px;
-         line-height: 41px;
-         color: #000000;
-         }
-         .why-text-content {
-         position: absolute;
-         font-family: 'Open Sans';
-         font-style: normal;
-         font-weight: 400;
-         font-size: 20px;
-         line-height: 27px;
-         color: #555555;
-         }
-         .curated-dr-title {
-         position: absolute;
-         font-family: 'Open Sans';
-         font-style: normal;
-         font-weight: 700;
-         font-size: 36px;
-         line-height: 49px;
-         color: #4C84C3;
-         }
-         .curated-dr-content {
-         position: absolute;
-         font-family: 'Open Sans';
-         font-style: normal;
-         font-weight: 400;
-         font-size: 16px;
-         line-height: 35px;
-         color: #555555;
-         }
-         .download-app-title {
-         position: absolute;
-         font-family: 'Open Sans';
-         font-style: normal;
-         font-weight: 700;
-         font-size: 40px;
-         line-height: 54px;
-         color: #4C84C3;
-         }
-         .download-app-content {
-         position: absolute;
-         font-family: 'Open Sans';
-         font-style: normal;
-         font-weight: 400;
-         font-size: 15px;
-         line-height: 27px;
-         color: #000000;
-         }
-         .user-feedback-title {
-         position: absolute;
-         font-family: 'Open Sans';
-         font-style: normal;
-         font-weight: 600;
-         font-size: 30px;
-         line-height: 41px;
-         color: #000000;
-         }
-         .user-feedback-content {
-         position: absolute;
-         font-family: 'Open Sans';
-         font-style: normal;
-         font-weight: 400;
-         font-size: 20px;
-         line-height: 27px;
-         color: #555555;
-         }
-         .user-feedback {
-         position: absolute;
-         font-family: 'Open Sans';
-         font-style: normal;
-         font-weight: 600;
-         font-size: 24px;
-         line-height: 43px;
-         text-align: center;
-         color: #4C84C3;
-         }
-         .footer-update-title {
-         position: absolute;
-         font-family: 'Roboto';
-         font-style: normal;
-         font-weight: 700;
-         font-size: 28px;
-         line-height: 120%;
-         color: rgba(255, 255, 255, 0.9);
-         }
-         .footer-update-content {
-         position: absolute;
-         font-family: 'Open Sans';
-         font-style: normal;
-         font-weight: 400;
-         font-size: 15px;
-         line-height: 120%;
-         color: #FFFFFF;
-         }
-         .subscribe-title {
-         position: absolute;
-         font-family: 'Fjalla One';
-         font-style: normal;
-         font-weight: 400;
-         font-size: 23px;
-         line-height: 29px;
-         color: #B2DDED;
-         }
-         .email-input {
-         box-sizing: border-box;
-         position: absolute;
-         border: 1px solid #B2DDED;
-         border-radius: 20px;
-         }
-         .email-input-label {
-         position: absolute;
-         font-family: 'Roboto';
-         font-style: normal;
-         font-weight: 400;
-         font-size: 16px;
-         line-height: 120%;
-         color: #B2DDED;
-         }
-         .subscribe-btn {
-         display: flex;
-         flex-direction: row;
-         justify-content: center;
-         align-items: center;
-         position: absolute;
-         background: #FFFFFF;
-         border-radius: 20px;
-         }
-         .subscribe-btn-label {
-         font-family: 'Roboto';
-         font-style: normal;
-         font-weight: 700;
-         font-size: 16px;
-         line-height: 19px;
-         color: #283779;
-         flex: none;
-         order: 0;
-         flex-grow: 0;
-         }
-         .footer-link-header-1 {
-         position: absolute;
-         font-family: 'Open Sans';
-         font-style: normal;
-         font-weight: 700;
-         font-size: 18px;
-         line-height: 25px;
-         color: rgba(255, 255, 255, 0.94);
-         }
-         .footer-link-item {
-         position: absolute;
-         font-family: 'Roboto';
-         font-style: normal;
-         font-weight: 400;
-         font-size: 15px;
-         line-height: 120%;
-         color: #B2DDED;
-         }
-         .footer-text {
-         position: absolute;
-         font-family: 'Roboto';
-         font-style: normal;
-         font-weight: 400;
-         font-size: 13px;
-         line-height: 15px;
-         color: #E0DEDE;
-         }
-         .privacy-policy-link {
-         position: absolute;
-         font-family: 'Roboto';
-         font-style: normal;
-         font-weight: 300;
-         font-size: 13px;
-         line-height: 15px;
-         text-align: right;
-         color: #E0DEDE;
-         }
-      </style>
+      <style>#hello-react {left: 5%; position: absolute; top: 34%;}input[type=text], select {width: 124% !important; padding: 9px 0px !important; margin: 7px 0px !important;}.job_list .jobs .button_group {padding-left: 30px !important; margin-top: 15px !important;}</style>
+      <style class="silex-style">.location-input {box-sizing: border-box; position: absolute; background: #FCFCFC; border: 1px solid #4C84C3; border-radius: 10px 0px 0px 10px;}.search-input {box-sizing: border-box; position: absolute; background: #FCFCFC; border: 1px solid #4C84C3; border-radius: 0px 10px 10px 0px;}.header-input-placeholder {position: absolute; font-family: 'Open Sans'; font-style: normal; font-weight: 400; font-size: 16px; line-height: 22px; letter-spacing: 0.0075em; color: #AAB0B3;}.top-bar-menu {position: absolute; width: 93px; height: 19px; left: 847px; top: 41px; font-family: 'Open Sans'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 19px; color: #545454;}.top-bar-btn {box-sizing: border-box; position: absolute; width: 152px; height: 32px; left: 1252px; top: 34px; background: #FFFFFF; border: 1px solid #4C84C3; border-radius: 10px;}.top-bar-btn-label {position: absolute; width: 87px; height: 18px; left: 1285px; top: 41px; font-family: 'Open Sans'; font-style: normal; font-weight: 400; font-size: 13px; line-height: 18px; color: #4C84C3;}.text-decoration {text-decoration: none;}.top-bar-logo {position: absolute; width: 85px; height: 76px; left: 70px; top: 12px; background: url(logo.png);}.h1-title {position: absolute; width: 409px; height: 123px; left: 824px; top: 302px; font-style: normal; font-weight: 700; font-size: 48px; line-height: 56px; text-align: center; color: #4C84C3;}.book-consultation-btn {box-sizing: border-box; position: absolute; width: 223px; height: 37px; left: 923px; top: 459px; background: #4C84C3; border: 1px solid #4C84C3; border-radius: 10px;}.book-consultation-btn-label {position: absolute; font-family: 'Open Sans'; font-style: normal; font-weight: 700; font-size: 13px; line-height: 18px; color: #FFFFFF;}.rectangle-simple {position: absolute; width: 53px; height: 8px; left: 1163px; top: 700px; border-radius: 5px;}.specialty-title {position: absolute; font-family: 'Open Sans'; font-style: normal; font-weight: 600; font-size: 30px; line-height: 41px; color: #000000;}.specialty-text {position: absolute; font-family: 'Open Sans'; font-style: normal; font-weight: 400; font-size: 20px; line-height: 27px; color: #555555;}.open-jobs-title {position: absolute; font-family: 'Mulish'; font-style: normal; font-weight: 700; font-size: 36px; line-height: 56px; color: #000000; mix-blend-mode: normal;}.open-jobs-content {position: absolute; font-family: 'Mulish'; font-style: normal; font-weight: 300; font-size: 18px; line-height: 30px; text-align: center; color: #7D7987; mix-blend-mode: normal;}.job-card-title {position: absolute; font-family: 'Amazon Ember'; font-style: normal; font-weight: 700; font-size: 24px; line-height: 150%; color: #18181B;}.job-card-pay-rate {position: absolute; font-family: 'Amazon Ember'; font-style: normal; font-weight: 400; font-size: 24px; line-height: 24px; letter-spacing: -0.5px; color: #3F3F46;}.job-card-company {position: absolute; font-family: 'Amazon Ember'; font-style: normal; font-weight: 400; font-size: 16px; line-height: 150%; color: #3F3F46;}.job-card-skill-label {display: flex; flex-direction: row; align-items: center; padding: 4px 8px; gap: 10px; position: absolute; background: #EFF0F6; border-radius: 7px;}.job-card-skill-text {font-family: 'Amazon Ember'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 22px; color: #1F1F1F; flex: none; order: 0; flex-grow: 0;}.job-card-container {position: absolute; background: #FFFFFF; box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4); border-radius: 20px;}.why-title {position: absolute; font-family: 'Open Sans'; font-style: normal; font-weight: 600; font-size: 30px; line-height: 41px; color: #000000;}.why-text-content {position: absolute; font-family: 'Open Sans'; font-style: normal; font-weight: 400; font-size: 20px; line-height: 27px; color: #555555;}.curated-dr-title {position: absolute; font-family: 'Open Sans'; font-style: normal; font-weight: 700; font-size: 36px; line-height: 49px; color: #4C84C3;}.curated-dr-content {position: absolute; font-family: 'Open Sans'; font-style: normal; font-weight: 400; font-size: 16px; line-height: 35px; color: #555555;}.download-app-title {position: absolute; font-family: 'Open Sans'; font-style: normal; font-weight: 700; font-size: 40px; line-height: 54px; color: #4C84C3;}.download-app-content {position: absolute; font-family: 'Open Sans'; font-style: normal; font-weight: 400; font-size: 15px; line-height: 27px; color: #000000;}.user-feedback-title {position: absolute; font-family: 'Open Sans'; font-style: normal; font-weight: 600; font-size: 30px; line-height: 41px; color: #000000;}.user-feedback-content {position: absolute; font-family: 'Open Sans'; font-style: normal; font-weight: 400; font-size: 20px; line-height: 27px; color: #555555;}.user-feedback {font-family: 'Open Sans'; font-style: normal; font-weight: 400; font-size: 24px; line-height: 43px; color: #4C84C3;}.footer-update-title {position: absolute; font-family: 'Roboto'; font-style: normal; font-weight: 700; font-size: 28px; line-height: 120%; color: rgba(255, 255, 255, 0.9);}.footer-update-content {position: absolute; font-family: 'Open Sans'; font-style: normal; font-weight: 400; font-size: 15px; line-height: 120%; color: #FFFFFF;}.subscribe-title {position: absolute; font-family: 'Fjalla One'; font-style: normal; font-weight: 400; font-size: 23px; line-height: 29px; color: #B2DDED;}.email-input {box-sizing: border-box; position: absolute; border: 1px solid #B2DDED; border-radius: 20px;}.email-input-label {position: absolute; font-family: 'Roboto'; font-style: normal; font-weight: 400; font-size: 16px; line-height: 120%; color: #B2DDED;}.subscribe-btn {display: flex; flex-direction: row; justify-content: center; align-items: center; position: absolute; background: #FFFFFF; border-radius: 20px;}.subscribe-btn-label {font-family: 'Roboto'; font-style: normal; font-weight: 700; font-size: 16px; line-height: 19px; color: #283779; flex: none; order: 0; flex-grow: 0;}.footer-link-header-1 {position: absolute; font-family: 'Open Sans'; font-style: normal; font-weight: 700; font-size: 18px; line-height: 25px; color: rgba(255, 255, 255, 0.94);}.footer-link-item {position: absolute; font-family: 'Roboto'; font-style: normal; font-weight: 400; font-size: 15px; line-height: 120%; color: #B2DDED;}.footer-text {position: absolute; font-family: 'Roboto'; font-style: normal; font-weight: 400; font-size: 13px; line-height: 15px; color: #E0DEDE;}.privacy-policy-link {position: absolute; font-family: 'Roboto'; font-style: normal; font-weight: 300; font-size: 13px; line-height: 15px; text-align: right; color: #E0DEDE;}</style>
       <script type="text/javascript" class="silex-script"></script>
-      <style class="silex-inline-styles">.body-initial {
-         background-color: rgba(219, 219, 219, 1);
-         position: static;
-         }
-         .silex-id-1478366444112-1 {
-         background-color: rgba(255, 255, 255, 1);
-         position: static;
-         margin-top: -1px;
-         }
-         .silex-id-1478366444112-0 {
-         background-color: rgba(255, 255, 255, 1);
-         min-height: 100px;
-         position: relative;
-         margin-left: auto;
-         margin-right: auto;
-         }
-         .silex-id-1474394621033-3 {
-         position: static;
-         margin-top: -1px;
-         background-color: rgba(255, 255, 255, 1);
-         }
-         .silex-id-1474394621032-2 {
-         background-color: transparent;
-         min-height: 4301.38720703125px;
-         position: relative;
-         margin-left: auto;
-         margin-right: auto;
-         border-radius: 5px 5px 5px 5px;
-         }
-         .silex-id-1669787567652-0 {
-         width: 85px;
-         height: 76px;
-         position: absolute;
-         top: 12px;
-         left: 70px;
-         }
-         .silex-id-1669787651206-1 {
-         width: 152px;
-         min-height: 44px;
-         background-color: transparent;
-         position: absolute;
-         top: 30px;
-         left: 225px;
-         }
-         .silex-id-1669787741355-2 {
-         width: 11px;
-         height: 16px;
-         position: absolute;
-         top: 14px;
-         left: 14px;
-         }
-         .silex-id-1669787843321-3 {
-         width: 57px;
-         min-height: 23px;
-         position: absolute;
-         top: -4px;
-         left: 41px;
-         }
-         .silex-id-1669788969795-4 {
-         width: 428px;
-         min-height: 44px;
-         background-color: transparent;
-         position: absolute;
-         top: 30px;
-         left: 376px;
-         }
-         .silex-id-1669788969795-5 {
-         width: 17px;
-         height: 17px;
-         position: absolute;
-         top: 14px;
-         left: 14px;
-         }
-         .silex-id-1669788969795-6 {
-         width: 309px;
-         min-height: 76px;
-         position: absolute;
-         top: -4px;
-         left: 41px;
-         }
-         .silex-id-1669805752036-10 {
-         width: 93px;
-         min-height: 19px;
-         position: absolute;
-         top: 27px;
-         left: 847px;
-         }
-         .silex-id-1669805881128-11 {
-         width: 111px;
-         min-height: 55px;
-         position: absolute;
-         top: 27px;
-         left: 982px;
-         }
-         .silex-id-1669805905668-13 {
-         width: 78px;
-         min-height: 55px;
-         position: absolute;
-         top: 27px;
-         left: 1132px;
-         }
-         .silex-id-1669805964329-15 {
-         width: 142px;
-         min-height: 42px;
-         background-color: rgb(255, 255, 255);
-         position: absolute;
-         top: 28px;
-         left: 1262px;
-         }
-         .silex-id-1669806060988-16 {
-         width: 92px;
-         min-height: 31px;
-         position: absolute;
-         top: -1px;
-         left: 31px;
-         }
-         .silex-id-1669815956867-0 {
-         width: 1111px;
-         height: 630px;
-         position: absolute;
-         top: 1px;
-         left: -1px;
-         }
-         .silex-id-1669816765521-1 {
-         width: 335px;
-         height: 630px;
-         position: absolute;
-         top: 1px;
-         left: 1108.328125px;
-         background-color: transparent;
-         }
-         .silex-id-1669825970013-2 {
-         width: 409px;
-         min-height: 123px;
-         position: absolute;
-         top: 155px;
-         left: 824px;
-         }
-         .silex-id-1669826794847-0 {
-         width: 223px;
-         min-height: 37px;
-         background-color: rgba(76, 132, 195, 1);
-         position: absolute;
-         top: 340px;
-         left: 923px;
-         }
-         .silex-id-1669826987326-1 {
-         width: 167px;
-         min-height: 44px;
-         position: absolute;
-         top: -4px;
-         left: 41px;
-         }
-         .silex-id-1669827461536-2 {
-         width: 53px;
-         min-height: 8px;
-         background-color: rgba(196, 196, 196, 1);
-         position: absolute;
-         top: 138px;
-         left: 60px;
-         border-radius: 5px 5px 5px 5px;
-         }
-         .silex-id-1669827582934-3 {
-         width: 296px;
-         min-height: 177px;
-         background-color: transparent;
-         position: absolute;
-         top: 429px;
-         left: 1122.984375px;
-         }
-         .silex-id-1669827786418-4 {
-         width: 53px;
-         min-height: 8px;
-         background-color: rgba(196, 196, 196, 1);
-         position: absolute;
-         top: 126px;
-         left: 220px;
-         border-radius: 5px 5px 5px 5px;
-         }
-         .silex-id-1669828022899-6 {
-         width: 53px;
-         min-height: 8px;
-         background-color: rgba(76, 132, 195, 1);
-         position: absolute;
-         top: 126px;
-         left: 140px;
-         border-radius: 5px 5px 5px 5px;
-         }
-         .silex-id-1669828621431-9 {
-         width: 298px;
-         min-height: 41px;
-         position: absolute;
-         top: 796px;
-         left: 571px;
-         }
-         .silex-id-1669828918421-11 {
-         width: 604px;
-         min-height: 27px;
-         position: absolute;
-         top: 862px;
-         left: 418px;
-         }
-         .silex-id-1669830023683-12 {
-         width: 240px;
-         height: 218px;
-         position: absolute;
-         top: 962px;
-         left: 149px;
-         border-radius: 10px 10px 10px 10px;
-         }
-         .silex-id-1669830131104-13 {
-         width: 240px;
-         height: 218px;
-         position: absolute;
-         top: 962px;
-         left: 450px;
-         border-radius: 10px 10px 10px 10px;
-         }
-         .silex-id-1669830179463-14 {
-         width: 240px;
-         height: 218px;
-         position: absolute;
-         top: 962.0001220703125px;
-         left: 751px;
-         border-radius: 10px 10px 10px 10px;
-         }
-         .silex-id-1669830218142-15 {
-         width: 240px;
-         height: 218px;
-         position: absolute;
-         top: 962.0001220703125px;
-         left: 1052px;
-         border-radius: 10px 10px 10px 10px;
-         }
-         .silex-id-1669830389128-16 {
-         width: 177px;
-         min-height: 56px;
-         position: absolute;
-         top: 1322px;
-         left: 641px;
-         }
-         .silex-id-1669830550713-17 {
-         width: 952px;
-         min-height: 60px;
-         position: absolute;
-         top: 1409px;
-         left: 254px;
-         }
-         .silex-id-1669830811913-18 {
-         width: 422px;
-         min-height: 253px;
-         background-color: rgba(255, 255, 255, 1);
-         position: absolute;
-         top: 1534px;
-         left: 58px;
-         border-radius: 20px 20px 20px 20px;
-         }
-         .silex-id-1669830956996-19 {
-         width: 36px;
-         height: 36px;
-         position: absolute;
-         top: 27.999954223632812px;
-         left: 34.01232421398163px;
-         }
-         .silex-id-1669831014326-20 {
-         width: 236px;
-         min-height: 84px;
-         position: absolute;
-         top: 6.987495422363281px;
-         left: 82px;
-         }
-         .silex-id-1669831752895-0 {
-         width: 285px;
-         min-height: 72px;
-         position: absolute;
-         top: 67.01063537597656px;
-         left: 34.00023865699768px;
-         }
-         .silex-id-1669832053827-1 {
-         width: 9px;
-         height: 17px;
-         position: absolute;
-         top: 137px;
-         left: 37px;
-         }
-         .silex-id-1669832380766-2 {
-         width: 6px;
-         height: 14px;
-         position: absolute;
-         top: 139px;
-         left: 46px;
-         }
-         .silex-id-1669832598464-3 {
-         width: 66px;
-         min-height: 56px;
-         position: absolute;
-         top: 120.40919494628906px;
-         left: 59.99998474121094px;
-         }
-         .silex-id-1669832985512-5 {
-         width: 12px;
-         height: 16px;
-         position: absolute;
-         top: 138px;
-         left: 150px;
-         }
-         .silex-id-1669833091154-6 {
-         width: 82px;
-         min-height: 56px;
-         position: absolute;
-         top: 120.41157531738281px;
-         left: 172.00021994113922px;
-         }
-         .silex-id-1669833278958-7 {
-         width: 17px;
-         height: 16px;
-         position: absolute;
-         top: 139px;
-         left: 290px;
-         }
-         .silex-id-1669833370204-8 {
-         width: 82px;
-         min-height: 56px;
-         position: absolute;
-         top: 120.41102600097656px;
-         left: 319.0002384185791px;
-         }
-         .silex-id-1669833475302-10 {
-         width: 58px;
-         min-height: 39px;
-         background-color: rgba(239, 240, 246, 1);
-         position: absolute;
-         top: 187px;
-         left: 34px;
-         border-radius: 7px 7px 7px 7px;
-         }
-         .silex-id-1669833711441-11 {
-         width: 50px;
-         min-height: 23px;
-         position: absolute;
-         top: -0.3108367919921875px;
-         left: 13px;
-         }
-         .silex-id-1669833898183-12 {
-         width: 78px;
-         min-height: 39px;
-         background-color: rgba(239, 240, 246, 1);
-         position: absolute;
-         top: 187px;
-         left: 134px;
-         border-radius: 7px 7px 7px 7px;
-         }
-         .silex-id-1669833898183-13 {
-         width: 60px;
-         min-height: 23px;
-         position: absolute;
-         top: -0.3108367919921875px;
-         left: 13px;
-         }
-         .silex-id-1669834058897-16 {
-         width: 64px;
-         min-height: 39px;
-         background-color: rgba(239, 240, 246, 1);
-         position: absolute;
-         top: 187px;
-         left: 254px;
-         border-radius: 7px 7px 7px 7px;
-         }
-         .silex-id-1669834058897-17 {
-         width: 60px;
-         min-height: 23px;
-         position: absolute;
-         top: -0.3108367919921875px;
-         left: 13px;
-         }
-         .silex-id-1669835206186-95 {
-         width: 422px;
-         min-height: 253px;
-         background-color: rgba(255, 255, 255, 1);
-         position: absolute;
-         top: 1534px;
-         left: 520px;
-         border-radius: 20px 20px 20px 20px;
-         }
-         .silex-id-1669835206186-96 {
-         width: 58px;
-         min-height: 39px;
-         background-color: rgba(239, 240, 246, 1);
-         position: absolute;
-         top: 187px;
-         left: 34px;
-         border-radius: 7px 7px 7px 7px;
-         }
-         .silex-id-1669835206186-97 {
-         width: 50px;
-         min-height: 23px;
-         position: absolute;
-         top: -0.3108367919921875px;
-         left: 13px;
-         }
-         .silex-id-1669835206186-98 {
-         width: 78px;
-         min-height: 39px;
-         background-color: rgba(239, 240, 246, 1);
-         position: absolute;
-         top: 187px;
-         left: 134px;
-         border-radius: 7px 7px 7px 7px;
-         }
-         .silex-id-1669835206186-99 {
-         width: 60px;
-         min-height: 23px;
-         position: absolute;
-         top: -0.3108367919921875px;
-         left: 13px;
-         }
-         .silex-id-1669835206186-100 {
-         width: 64px;
-         min-height: 39px;
-         background-color: rgba(239, 240, 246, 1);
-         position: absolute;
-         top: 187px;
-         left: 254px;
-         border-radius: 7px 7px 7px 7px;
-         }
-         .silex-id-1669835206186-101 {
-         width: 60px;
-         min-height: 23px;
-         position: absolute;
-         top: -0.3108367919921875px;
-         left: 13px;
-         }
-         .silex-id-1669835206186-102 {
-         width: 36px;
-         height: 36px;
-         position: absolute;
-         top: 27.999954223632812px;
-         left: 34.01232421398163px;
-         }
-         .silex-id-1669835206186-103 {
-         width: 285px;
-         min-height: 72px;
-         position: absolute;
-         top: 67.01063537597656px;
-         left: 34.00023865699768px;
-         }
-         .silex-id-1669835206186-104 {
-         width: 66px;
-         min-height: 56px;
-         position: absolute;
-         top: 120.40919494628906px;
-         left: 59.99998474121094px;
-         }
-         .silex-id-1669835206186-105 {
-         width: 82px;
-         min-height: 56px;
-         position: absolute;
-         top: 120.41102600097656px;
-         left: 319.0002384185791px;
-         }
-         .silex-id-1669835206186-106 {
-         width: 82px;
-         min-height: 56px;
-         position: absolute;
-         top: 120.41157531738281px;
-         left: 172.00021994113922px;
-         }
-         .silex-id-1669835206186-107 {
-         width: 17px;
-         height: 16px;
-         position: absolute;
-         top: 139px;
-         left: 290px;
-         }
-         .silex-id-1669835206186-108 {
-         width: 12px;
-         height: 16px;
-         position: absolute;
-         top: 138px;
-         left: 150px;
-         }
-         .silex-id-1669835206186-109 {
-         width: 236px;
-         min-height: 84px;
-         position: absolute;
-         top: 6.987495422363281px;
-         left: 82px;
-         }
-         .silex-id-1669835206186-110 {
-         width: 6px;
-         height: 14px;
-         position: absolute;
-         top: 139px;
-         left: 46px;
-         }
-         .silex-id-1669835206186-111 {
-         width: 9px;
-         height: 17px;
-         position: absolute;
-         top: 137px;
-         left: 37px;
-         }
-         .silex-id-1669835241022-129 {
-         width: 422px;
-         min-height: 253px;
-         background-color: rgba(255, 255, 255, 1);
-         position: absolute;
-         top: 1534.799955368042px;
-         left: 982px;
-         border-radius: 20px 20px 20px 20px;
-         }
-         .silex-id-1669835241022-130 {
-         width: 58px;
-         min-height: 39px;
-         background-color: rgba(239, 240, 246, 1);
-         position: absolute;
-         top: 187px;
-         left: 34px;
-         border-radius: 7px 7px 7px 7px;
-         }
-         .silex-id-1669835241022-131 {
-         width: 50px;
-         min-height: 23px;
-         position: absolute;
-         top: -0.3108367919921875px;
-         left: 13px;
-         }
-         .silex-id-1669835241022-132 {
-         width: 78px;
-         min-height: 39px;
-         background-color: rgba(239, 240, 246, 1);
-         position: absolute;
-         top: 187px;
-         left: 134px;
-         border-radius: 7px 7px 7px 7px;
-         }
-         .silex-id-1669835241022-133 {
-         width: 60px;
-         min-height: 23px;
-         position: absolute;
-         top: -0.3108367919921875px;
-         left: 13px;
-         }
-         .silex-id-1669835241023-134 {
-         width: 64px;
-         min-height: 39px;
-         background-color: rgba(239, 240, 246, 1);
-         position: absolute;
-         top: 187px;
-         left: 254px;
-         border-radius: 7px 7px 7px 7px;
-         }
-         .silex-id-1669835241023-135 {
-         width: 60px;
-         min-height: 23px;
-         position: absolute;
-         top: -0.3108367919921875px;
-         left: 13px;
-         }
-         .silex-id-1669835241023-136 {
-         width: 36px;
-         height: 36px;
-         position: absolute;
-         top: 27.999954223632812px;
-         left: 34.01232421398163px;
-         }
-         .silex-id-1669835241023-137 {
-         width: 285px;
-         min-height: 72px;
-         position: absolute;
-         top: 67.01063537597656px;
-         left: 34.00023865699768px;
-         }
-         .silex-id-1669835241023-138 {
-         width: 66px;
-         min-height: 56px;
-         position: absolute;
-         top: 120.40919494628906px;
-         left: 59.99998474121094px;
-         }
-         .silex-id-1669835241023-139 {
-         width: 82px;
-         min-height: 56px;
-         position: absolute;
-         top: 120.41102600097656px;
-         left: 319.0002384185791px;
-         }
-         .silex-id-1669835241023-140 {
-         width: 82px;
-         min-height: 56px;
-         position: absolute;
-         top: 120.41157531738281px;
-         left: 172.00021994113922px;
-         }
-         .silex-id-1669835241023-141 {
-         width: 17px;
-         height: 16px;
-         position: absolute;
-         top: 139px;
-         left: 290px;
-         }
-         .silex-id-1669835241023-142 {
-         width: 12px;
-         height: 16px;
-         position: absolute;
-         top: 138px;
-         left: 150px;
-         }
-         .silex-id-1669835241023-143 {
-         width: 236px;
-         min-height: 84px;
-         position: absolute;
-         top: 6.987495422363281px;
-         left: 82px;
-         }
-         .silex-id-1669835241023-144 {
-         width: 6px;
-         height: 14px;
-         position: absolute;
-         top: 139px;
-         left: 46px;
-         }
-         .silex-id-1669835241023-145 {
-         width: 9px;
-         height: 17px;
-         position: absolute;
-         top: 137px;
-         left: 37px;
-         }
-         .silex-id-1669835282258-163 {
-         width: 422px;
-         min-height: 253px;
-         background-color: rgba(255, 255, 255, 1);
-         position: absolute;
-         top: 1838px;
-         left: 520.0001068115234px;
-         border-radius: 20px 20px 20px 20px;
-         }
-         .silex-id-1669835282258-164 {
-         width: 58px;
-         min-height: 39px;
-         background-color: rgba(239, 240, 246, 1);
-         position: absolute;
-         top: 187px;
-         left: 34px;
-         border-radius: 7px 7px 7px 7px;
-         }
-         .silex-id-1669835282258-165 {
-         width: 50px;
-         min-height: 23px;
-         position: absolute;
-         top: -0.3108367919921875px;
-         left: 13px;
-         }
-         .silex-id-1669835282258-166 {
-         width: 78px;
-         min-height: 39px;
-         background-color: rgba(239, 240, 246, 1);
-         position: absolute;
-         top: 187px;
-         left: 134px;
-         border-radius: 7px 7px 7px 7px;
-         }
-         .silex-id-1669835282258-167 {
-         width: 60px;
-         min-height: 23px;
-         position: absolute;
-         top: -0.3108367919921875px;
-         left: 13px;
-         }
-         .silex-id-1669835282258-168 {
-         width: 64px;
-         min-height: 39px;
-         background-color: rgba(239, 240, 246, 1);
-         position: absolute;
-         top: 187px;
-         left: 254px;
-         border-radius: 7px 7px 7px 7px;
-         }
-         .silex-id-1669835282258-169 {
-         width: 60px;
-         min-height: 23px;
-         position: absolute;
-         top: -0.3108367919921875px;
-         left: 13px;
-         }
-         .silex-id-1669835282258-170 {
-         width: 36px;
-         height: 36px;
-         position: absolute;
-         top: 27.999954223632812px;
-         left: 34.01232421398163px;
-         }
-         .silex-id-1669835282258-171 {
-         width: 285px;
-         min-height: 72px;
-         position: absolute;
-         top: 67.01063537597656px;
-         left: 34.00023865699768px;
-         }
-         .silex-id-1669835282258-172 {
-         width: 66px;
-         min-height: 56px;
-         position: absolute;
-         top: 120.40919494628906px;
-         left: 59.99998474121094px;
-         }
-         .silex-id-1669835282258-173 {
-         width: 82px;
-         min-height: 56px;
-         position: absolute;
-         top: 120.41102600097656px;
-         left: 319.0002384185791px;
-         }
-         .silex-id-1669835282258-174 {
-         width: 82px;
-         min-height: 56px;
-         position: absolute;
-         top: 120.41157531738281px;
-         left: 172.00021994113922px;
-         }
-         .silex-id-1669835282258-175 {
-         width: 17px;
-         height: 16px;
-         position: absolute;
-         top: 139px;
-         left: 290px;
-         }
-         .silex-id-1669835282258-176 {
-         width: 12px;
-         height: 16px;
-         position: absolute;
-         top: 138px;
-         left: 150px;
-         }
-         .silex-id-1669835282258-177 {
-         width: 236px;
-         min-height: 84px;
-         position: absolute;
-         top: 6.987495422363281px;
-         left: 82px;
-         }
-         .silex-id-1669835282258-178 {
-         width: 6px;
-         height: 14px;
-         position: absolute;
-         top: 139px;
-         left: 46px;
-         }
-         .silex-id-1669835282258-179 {
-         width: 9px;
-         height: 17px;
-         position: absolute;
-         top: 137px;
-         left: 37px;
-         }
-         .silex-id-1669835313830-197 {
-         width: 422px;
-         min-height: 253px;
-         background-color: rgba(255, 255, 255, 1);
-         position: absolute;
-         top: 1838.7626190185547px;
-         left: 58px;
-         border-radius: 20px 20px 20px 20px;
-         }
-         .silex-id-1669835313830-198 {
-         width: 58px;
-         min-height: 39px;
-         background-color: rgba(239, 240, 246, 1);
-         position: absolute;
-         top: 187px;
-         left: 34px;
-         border-radius: 7px 7px 7px 7px;
-         }
-         .silex-id-1669835313830-199 {
-         width: 50px;
-         min-height: 23px;
-         position: absolute;
-         top: -0.3108367919921875px;
-         left: 13px;
-         }
-         .silex-id-1669835313830-200 {
-         width: 78px;
-         min-height: 39px;
-         background-color: rgba(239, 240, 246, 1);
-         position: absolute;
-         top: 187px;
-         left: 134px;
-         border-radius: 7px 7px 7px 7px;
-         }
-         .silex-id-1669835313830-201 {
-         width: 60px;
-         min-height: 23px;
-         position: absolute;
-         top: -0.3108367919921875px;
-         left: 13px;
-         }
-         .silex-id-1669835313830-202 {
-         width: 64px;
-         min-height: 39px;
-         background-color: rgba(239, 240, 246, 1);
-         position: absolute;
-         top: 187px;
-         left: 254px;
-         border-radius: 7px 7px 7px 7px;
-         }
-         .silex-id-1669835313830-203 {
-         width: 60px;
-         min-height: 23px;
-         position: absolute;
-         top: -0.3108367919921875px;
-         left: 13px;
-         }
-         .silex-id-1669835313830-204 {
-         width: 36px;
-         height: 36px;
-         position: absolute;
-         top: 27.999954223632812px;
-         left: 34.01232421398163px;
-         }
-         .silex-id-1669835313830-205 {
-         width: 285px;
-         min-height: 72px;
-         position: absolute;
-         top: 67.01063537597656px;
-         left: 34.00023865699768px;
-         }
-         .silex-id-1669835313830-206 {
-         width: 66px;
-         min-height: 56px;
-         position: absolute;
-         top: 120.40919494628906px;
-         left: 59.99998474121094px;
-         }
-         .silex-id-1669835313830-207 {
-         width: 82px;
-         min-height: 56px;
-         position: absolute;
-         top: 120.41102600097656px;
-         left: 319.0002384185791px;
-         }
-         .silex-id-1669835313830-208 {
-         width: 82px;
-         min-height: 56px;
-         position: absolute;
-         top: 120.41157531738281px;
-         left: 172.00021994113922px;
-         }
-         .silex-id-1669835313830-209 {
-         width: 17px;
-         height: 16px;
-         position: absolute;
-         top: 139px;
-         left: 290px;
-         }
-         .silex-id-1669835313830-210 {
-         width: 12px;
-         height: 16px;
-         position: absolute;
-         top: 138px;
-         left: 150px;
-         }
-         .silex-id-1669835313830-211 {
-         width: 236px;
-         min-height: 84px;
-         position: absolute;
-         top: 6.987495422363281px;
-         left: 82px;
-         }
-         .silex-id-1669835313830-212 {
-         width: 6px;
-         height: 14px;
-         position: absolute;
-         top: 139px;
-         left: 46px;
-         }
-         .silex-id-1669835313830-213 {
-         width: 9px;
-         height: 17px;
-         position: absolute;
-         top: 137px;
-         left: 37px;
-         }
-         .silex-id-1669835345525-231 {
-         width: 422px;
-         min-height: 253px;
-         background-color: rgba(255, 255, 255, 1);
-         position: absolute;
-         top: 1838px;
-         left: 982px;
-         border-radius: 20px 20px 20px 20px;
-         }
-         .silex-id-1669835345525-232 {
-         width: 58px;
-         min-height: 39px;
-         background-color: rgba(239, 240, 246, 1);
-         position: absolute;
-         top: 187px;
-         left: 34px;
-         border-radius: 7px 7px 7px 7px;
-         }
-         .silex-id-1669835345525-233 {
-         width: 50px;
-         min-height: 23px;
-         position: absolute;
-         top: -0.3108367919921875px;
-         left: 13px;
-         }
-         .silex-id-1669835345525-234 {
-         width: 78px;
-         min-height: 39px;
-         background-color: rgba(239, 240, 246, 1);
-         position: absolute;
-         top: 187px;
-         left: 134px;
-         border-radius: 7px 7px 7px 7px;
-         }
-         .silex-id-1669835345525-235 {
-         width: 60px;
-         min-height: 23px;
-         position: absolute;
-         top: -0.3108367919921875px;
-         left: 13px;
-         }
-         .silex-id-1669835345525-236 {
-         width: 64px;
-         min-height: 39px;
-         background-color: rgba(239, 240, 246, 1);
-         position: absolute;
-         top: 187px;
-         left: 254px;
-         border-radius: 7px 7px 7px 7px;
-         }
-         .silex-id-1669835345525-237 {
-         width: 60px;
-         min-height: 23px;
-         position: absolute;
-         top: -0.3108367919921875px;
-         left: 13px;
-         }
-         .silex-id-1669835345525-238 {
-         width: 36px;
-         height: 36px;
-         position: absolute;
-         top: 27.999954223632812px;
-         left: 34.01232421398163px;
-         }
-         .silex-id-1669835345525-239 {
-         width: 285px;
-         min-height: 72px;
-         position: absolute;
-         top: 67.01063537597656px;
-         left: 34.00023865699768px;
-         }
-         .silex-id-1669835345525-240 {
-         width: 66px;
-         min-height: 56px;
-         position: absolute;
-         top: 120.40919494628906px;
-         left: 59.99998474121094px;
-         }
-         .silex-id-1669835345525-241 {
-         width: 82px;
-         min-height: 56px;
-         position: absolute;
-         top: 120.41102600097656px;
-         left: 319.0002384185791px;
-         }
-         .silex-id-1669835345525-242 {
-         width: 82px;
-         min-height: 56px;
-         position: absolute;
-         top: 120.41157531738281px;
-         left: 172.00021994113922px;
-         }
-         .silex-id-1669835345525-243 {
-         width: 17px;
-         height: 16px;
-         position: absolute;
-         top: 139px;
-         left: 290px;
-         }
-         .silex-id-1669835345525-244 {
-         width: 12px;
-         height: 16px;
-         position: absolute;
-         top: 138px;
-         left: 150px;
-         }
-         .silex-id-1669835345525-245 {
-         width: 236px;
-         min-height: 84px;
-         position: absolute;
-         top: 6.987495422363281px;
-         left: 82px;
-         }
-         .silex-id-1669835345525-246 {
-         width: 6px;
-         height: 14px;
-         position: absolute;
-         top: 139px;
-         left: 46px;
-         }
-         .silex-id-1669835345525-247 {
-         width: 9px;
-         height: 17px;
-         position: absolute;
-         top: 137px;
-         left: 37px;
-         }
-         .silex-id-1669836835068-0 {
-         width: 53px;
-         min-height: 8px;
-         background-color: rgba(196, 196, 196, 1);
-         position: absolute;
-         top: 126px;
-         left: 60px;
-         border-radius: 5px 5px 5px 5px;
-         }
-         .silex-id-1669837259365-3 {
-         width: 177px;
-         min-height: 37px;
-         background-color: rgba(76, 132, 195, 1);
-         position: absolute;
-         top: 2270px;
-         left: 660px;
-         }
-         .silex-id-1669837259365-4 {
-         width: 59px;
-         min-height: 44px;
-         position: absolute;
-         top: -3px;
-         left: 60px;
-         }
-         .silex-id-1669891065904-0 {
-         width: 208px;
-         min-height: 41px;
-         position: absolute;
-         top: 2354px;
-         left: 616px;
-         }
-         .silex-id-1669892369634-1 {
-         width: 597px;
-         min-height: 27px;
-         position: absolute;
-         top: 2425px;
-         left: 430px;
-         }
-         .silex-id-1669892968101-0 {
-         width: 194px;
-         height: 414px;
-         position: absolute;
-         top: 2500px;
-         left: 200px;
-         }
-         .silex-id-1669893305792-1 {
-         width: 501px;
-         min-height: 59px;
-         position: absolute;
-         top: 2548px;
-         left: 622px;
-         }
-         .silex-id-1669893405487-2 {
-         width: 583px;
-         min-height: 224px;
-         position: absolute;
-         top: 2619px;
-         left: 622px;
-         }
-         .silex-id-1669893656139-3 {
-         width: 1181px;
-         height: 550px;
-         position: absolute;
-         top: 3099px;
-         left: 105px;
-         }
-         .silex-id-1669894542514-4 {
-         width: 372px;
-         min-height: 59px;
-         position: absolute;
-         top: 3220px;
-         left: 662px;
-         }
-         .silex-id-1669895961763-6 {
-         width: 377px;
-         min-height: 95px;
-         position: absolute;
-         top: 3325px;
-         left: 665px;
-         }
-         .silex-id-1669896474946-7 {
-         width: 184px;
-         height: 50px;
-         position: absolute;
-         top: 3450px;
-         left: 670px;
-         }
-         .silex-id-1669896543125-9 {
-         width: 164px;
-         height: 50px;
-         position: absolute;
-         top: 3450px;
-         left: 878px;
-         }
-         .silex-id-1669896788218-10 {
-         width: 397px;
-         min-height: 41px;
-         position: absolute;
-         top: 3707px;
-         left: 521px;
-         }
-         .silex-id-1669896927684-11 {
-         width: 597px;
-         min-height: 27px;
-         position: absolute;
-         top: 3760px;
-         left: 418px;
-         }
-         .silex-id-1669897100217-12 {
-         width: 552px;
-         min-height: 183px;
-         position: absolute;
-         top: 3854px;
-         left: 444px;
-         }
-         .silex-id-1669897350030-13 {
-         width: 40px;
-         height: 40px;
-         position: absolute;
-         top: 3912px;
-         left: 316px;
-         }
-         .silex-id-1669897397375-14 {
-         width: 40px;
-         height: 40px;
-         position: absolute;
-         top: 3912px;
-         left: 1124px;
-         }
-         .silex-id-1669897645387-15 {
-         position: static;
-         background-color: rgba(255, 255, 255, 1);
-         }
-         .silex-id-1669897645388-16 {
-         min-height: 521px;
-         background-color: rgb(255, 255, 255);
-         position: relative;
-         margin-left: auto;
-         margin-right: auto;
-         }
-         .silex-id-1669897697178-17 {
-         width: 1440px;
-         min-height: 521px;
-         background-color: rgba(40, 55, 121, 1);
-         position: absolute;
-         top: -0.5195465087890625px;
-         }
-         .silex-id-1669898190202-18 {
-         width: 476px;
-         min-height: 71px;
-         position: absolute;
-         top: 43px;
-         left: 152px;
-         }
-         .silex-id-1669898596819-19 {
-         width: 368px;
-         min-height: 89px;
-         position: absolute;
-         top: 100px;
-         left: 152px;
-         }
-         .silex-id-1669898776055-20 {
-         width: 344px;
-         min-height: 29px;
-         position: absolute;
-         top: 70.86251831054688px;
-         left: 645.9874877929688px;
-         }
-         .silex-id-1669899028076-21 {
-         width: 354px;
-         min-height: 45px;
-         background-color: transparent;
-         position: absolute;
-         top: 117.92500305175781px;
-         left: 645.9124755859375px;
-         border-radius: 20px 20px 20px 20px;
-         }
-         .silex-id-1669901038396-0 {
-         width: 81px;
-         min-height: 15px;
-         position: absolute;
-         top: -2px;
-         left: 23.076194763183594px;
-         }
-         .silex-id-1669901639624-1 {
-         width: 150px;
-         min-height: 48px;
-         background-color: rgb(255, 255, 255);
-         position: absolute;
-         top: 117px;
-         left: 1026px;
-         }
-         .silex-id-1669901890830-2 {
-         width: 73px;
-         min-height: 19px;
-         position: absolute;
-         top: -0.412384033203125px;
-         left: 40px;
-         }
-         .silex-id-1669902103702-3 {
-         width: 123px;
-         height: 110px;
-         position: absolute;
-         top: 50px;
-         left: 173px;
-         }
-         .silex-id-1669902180899-4 {
-         width: 1440px;
-         min-height: 262px;
-         background-color: rgba(27, 113, 161, 1);
-         position: absolute;
-         top: 200px;
-         left: 0px;
-         }
-         .silex-id-1669902552127-5 {
-         width: 133px;
-         min-height: 18px;
-         position: absolute;
-         top: 30px;
-         left: 445px;
-         }
-         .silex-id-1669902680127-6 {
-         width: 100px;
-         min-height: 48px;
-         position: absolute;
-         top: 70px;
-         left: 445px;
-         }
-         .silex-id-1669902810056-7 {
-         width: 100px;
-         min-height: 48px;
-         position: absolute;
-         top: 101px;
-         left: 445.00062561035156px;
-         }
-         .silex-id-1669902833379-9 {
-         width: 100px;
-         min-height: 48px;
-         position: absolute;
-         top: 132px;
-         left: 445.01239013671875px;
-         }
-         .silex-id-1669902964008-11 {
-         width: 120px;
-         min-height: 18px;
-         position: absolute;
-         top: 30px;
-         left: 699px;
-         }
-         .silex-id-1669903035039-13 {
-         width: 100px;
-         min-height: 48px;
-         position: absolute;
-         top: 70px;
-         left: 698.9754943847656px;
-         }
-         .silex-id-1669903095831-15 {
-         width: 100px;
-         min-height: 48px;
-         position: absolute;
-         top: 101px;
-         left: 698.7625122070312px;
-         }
-         .silex-id-1669903149566-17 {
-         width: 100px;
-         min-height: 48px;
-         position: absolute;
-         top: 132px;
-         left: 698.4381408691406px;
-         }
-         .silex-id-1669903234703-19 {
-         width: 92px;
-         min-height: 19px;
-         position: absolute;
-         top: 30px;
-         left: 886px;
-         }
-         .silex-id-1669903344046-21 {
-         width: 130px;
-         min-height: 19px;
-         position: absolute;
-         top: 70px;
-         left: 886.0014038085938px;
-         }
-         .silex-id-1669903356484-23 {
-         width: 100px;
-         min-height: 48px;
-         position: absolute;
-         top: 101.17941284179688px;
-         left: 885.6013793945312px;
-         }
-         .silex-id-1669903372060-25 {
-         width: 100px;
-         min-height: 48px;
-         position: absolute;
-         top: 132px;
-         left: 885.4008178710938px;
-         }
-         .silex-id-1669903501073-27 {
-         width: 147px;
-         min-height: 18px;
-         position: absolute;
-         top: 30px;
-         left: 1139px;
-         }
-         .silex-id-1669903575017-31 {
-         width: 100px;
-         min-height: 48px;
-         position: absolute;
-         top: 70.17340087890625px;
-         left: 1139px;
-         }
-         .silex-id-1669903585639-33 {
-         width: 100px;
-         min-height: 48px;
-         position: absolute;
-         top: 101.15887451171875px;
-         left: 1139px;
-         }
-         .silex-id-1669903600705-35 {
-         width: 100px;
-         min-height: 48px;
-         position: absolute;
-         top: 132px;
-         left: 1139px;
-         }
-         .silex-id-1669903718522-37 {
-         width: 269px;
-         min-height: 12px;
-         position: absolute;
-         top: 475px;
-         left: 226px;
-         }
-         .silex-id-1669903898784-38 {
-         width: 202px;
-         min-height: 12px;
-         position: absolute;
-         top: 475px;
-         left: 1075px;
-         }
-         @media only screen and (max-width: 480px) {
-         }
-      </style>
+      <style class="silex-inline-styles">.body-initial {background-color: rgba(219,219,219,1); position: static;}.silex-id-1478366444112-1 {background-color: rgba(255,255,255,1); position: static; margin-top: -1px;}.silex-id-1478366444112-0 {background-color: rgba(255,255,255,1); min-height: 100px; position: relative; margin-left: auto; margin-right: auto;}.silex-id-1474394621033-3 {position: static; margin-top: -1px; background-color: rgba(255,255,255,1);}.silex-id-1474394621032-2 {background-color: transparent; min-height: 4301.38720703125px; position: relative; margin-left: auto; margin-right: auto; border-radius: 5px 5px 5px 5px;}.silex-id-1669787567652-0 {width: 85px; height: 76px; position: absolute; top: 12px; left: 70px;}.silex-id-1669787651206-1 {width: 152px; min-height: 44px; background-color: transparent; position: absolute; top: 30px; left: 225px;}.silex-id-1669787741355-2 {width: 11px; height: 16px; position: absolute; top: 14px; left: 14px;}.silex-id-1669787843321-3 {width: 57px; min-height: 23px; position: absolute; top: -4px; left: 41px;}.silex-id-1669788969795-4 {width: 428px; min-height: 44px; background-color: transparent; position: absolute; top: 30px; left: 376px;}.silex-id-1669788969795-5 {width: 17px; height: 17px; position: absolute; top: 14px; left: 14px;}.silex-id-1669788969795-6 {width: 309px; min-height: 76px; position: absolute; top: -4px; left: 41px;}.silex-id-1669805752036-10 {width: 93px; min-height: 19px; position: absolute; top: 27px; left: 847px;}.silex-id-1669805881128-11 {width: 111px; min-height: 55px; position: absolute; top: 27px; left: 982px;}.silex-id-1669805905668-13 {width: 78px; min-height: 55px; position: absolute; top: 27px; left: 1132px;}.silex-id-1669805964329-15 {width: 142px; min-height: 42px; background-color: rgb(255, 255, 255); position: absolute; top: 28px; left: 1262px;}.silex-id-1669806060988-16 {width: 92px; min-height: 31px; position: absolute; top: -1px; left: 31px;}.silex-id-1669815956867-0 {width: 1111px; height: 630px; position: absolute; top: 1px; left: -1px;}.silex-id-1669816765521-1 {width: 335px; height: 630px; position: absolute; top: 1px; left: 1108.328125px; background-color: transparent;}.silex-id-1669825970013-2 {width: 409px; min-height: 123px; position: absolute; top: 155px; left: 824px;}.silex-id-1669826794847-0 {width: 223px; min-height: 37px; background-color: rgba(76,132,195,1); position: absolute; top: 340px; left: 923px;}.silex-id-1669826987326-1 {width: 167px; min-height: 44px; position: absolute; top: -4px; left: 41px;}.silex-id-1669828621431-9 {width: 298px; min-height: 41px; position: absolute; top: 796px; left: 571px;}.silex-id-1669828918421-11 {width: 604px; min-height: 27px; position: absolute; top: 862px; left: 418px;}.silex-id-1669830023683-12 {width: 240px; height: 218px; position: absolute; top: 962px; left: 149px; border-radius: 10px 10px 10px 10px;}.silex-id-1669830131104-13 {width: 240px; height: 218px; position: absolute; top: 962px; left: 450px; border-radius: 10px 10px 10px 10px;}.silex-id-1669830179463-14 {width: 240px; height: 218px; position: absolute; top: 962.0001220703125px; left: 751px; border-radius: 10px 10px 10px 10px;}.silex-id-1669830218142-15 {width: 240px; height: 218px; position: absolute; top: 962.0001220703125px; left: 1052px; border-radius: 10px 10px 10px 10px;}.silex-id-1669830389128-16 {width: 177px; min-height: 56px; position: absolute; top: 1322px; left: 641px;}.silex-id-1669830550713-17 {width: 952px; min-height: 60px; position: absolute; top: 1409px; left: 254px;}.silex-id-1669830811913-18 {width: 422px; min-height: 253px; background-color: rgba(255,255,255,1); position: absolute; top: 1534px; left: 58px; border-radius: 20px 20px 20px 20px;}.silex-id-1669830956996-19 {width: 36px; height: 36px; position: absolute; top: 27.999954223632812px; left: 34.01232421398163px;}.silex-id-1669831014326-20 {width: 236px; min-height: 84px; position: absolute; top: 6.987495422363281px; left: 82px;}.silex-id-1669831752895-0 {width: 285px; min-height: 72px; position: absolute; top: 67.01063537597656px; left: 34.00023865699768px;}.silex-id-1669832053827-1 {width: 9px; height: 17px; position: absolute; top: 137px; left: 37px;}.silex-id-1669832380766-2 {width: 6px; height: 14px; position: absolute; top: 139px; left: 46px;}.silex-id-1669832598464-3 {width: 66px; min-height: 56px; position: absolute; top: 120.40919494628906px; left: 59.99998474121094px;}.silex-id-1669832985512-5 {width: 12px; height: 16px; position: absolute; top: 138px; left: 150px;}.silex-id-1669833091154-6 {width: 82px; min-height: 56px; position: absolute; top: 120.41157531738281px; left: 172.00021994113922px;}.silex-id-1669833278958-7 {width: 17px; height: 16px; position: absolute; top: 139px; left: 290px;}.silex-id-1669833370204-8 {width: 82px; min-height: 56px; position: absolute; top: 120.41102600097656px; left: 319.0002384185791px;}.silex-id-1669833475302-10 {width: 58px; min-height: 39px; background-color: rgba(239,240,246,1); position: absolute; top: 187px; left: 34px; border-radius: 7px 7px 7px 7px;}.silex-id-1669833711441-11 {width: 50px; min-height: 23px; position: absolute; top: -0.3108367919921875px; left: 13px;}.silex-id-1669833898183-12 {width: 78px; min-height: 39px; background-color: rgba(239,240,246,1); position: absolute; top: 187px; left: 134px; border-radius: 7px 7px 7px 7px;}.silex-id-1669833898183-13 {width: 60px; min-height: 23px; position: absolute; top: -0.3108367919921875px; left: 13px;}.silex-id-1669834058897-16 {width: 64px; min-height: 39px; background-color: rgba(239,240,246,1); position: absolute; top: 187px; left: 254px; border-radius: 7px 7px 7px 7px;}.silex-id-1669834058897-17 {width: 60px; min-height: 23px; position: absolute; top: -0.3108367919921875px; left: 13px;}.silex-id-1669835206186-95 {width: 422px; min-height: 253px; background-color: rgba(255,255,255,1); position: absolute; top: 1534px; left: 520px; border-radius: 20px 20px 20px 20px;}.silex-id-1669835206186-96 {width: 58px; min-height: 39px; background-color: rgba(239,240,246,1); position: absolute; top: 187px; left: 34px; border-radius: 7px 7px 7px 7px;}.silex-id-1669835206186-97 {width: 50px; min-height: 23px; position: absolute; top: -0.3108367919921875px; left: 13px;}.silex-id-1669835206186-98 {width: 78px; min-height: 39px; background-color: rgba(239,240,246,1); position: absolute; top: 187px; left: 134px; border-radius: 7px 7px 7px 7px;}.silex-id-1669835206186-99 {width: 60px; min-height: 23px; position: absolute; top: -0.3108367919921875px; left: 13px;}.silex-id-1669835206186-100 {width: 64px; min-height: 39px; background-color: rgba(239,240,246,1); position: absolute; top: 187px; left: 254px; border-radius: 7px 7px 7px 7px;}.silex-id-1669835206186-101 {width: 60px; min-height: 23px; position: absolute; top: -0.3108367919921875px; left: 13px;}.silex-id-1669835206186-102 {width: 36px; height: 36px; position: absolute; top: 27.999954223632812px; left: 34.01232421398163px;}.silex-id-1669835206186-103 {width: 285px; min-height: 72px; position: absolute; top: 67.01063537597656px; left: 34.00023865699768px;}.silex-id-1669835206186-104 {width: 66px; min-height: 56px; position: absolute; top: 120.40919494628906px; left: 59.99998474121094px;}.silex-id-1669835206186-105 {width: 82px; min-height: 56px; position: absolute; top: 120.41102600097656px; left: 319.0002384185791px;}.silex-id-1669835206186-106 {width: 82px; min-height: 56px; position: absolute; top: 120.41157531738281px; left: 172.00021994113922px;}.silex-id-1669835206186-107 {width: 17px; height: 16px; position: absolute; top: 139px; left: 290px;}.silex-id-1669835206186-108 {width: 12px; height: 16px; position: absolute; top: 138px; left: 150px;}.silex-id-1669835206186-109 {width: 236px; min-height: 84px; position: absolute; top: 6.987495422363281px; left: 82px;}.silex-id-1669835206186-110 {width: 6px; height: 14px; position: absolute; top: 139px; left: 46px;}.silex-id-1669835206186-111 {width: 9px; height: 17px; position: absolute; top: 137px; left: 37px;}.silex-id-1669835241022-129 {width: 422px; min-height: 253px; background-color: rgba(255,255,255,1); position: absolute; top: 1534.799955368042px; left: 982px; border-radius: 20px 20px 20px 20px;}.silex-id-1669835241022-130 {width: 58px; min-height: 39px; background-color: rgba(239,240,246,1); position: absolute; top: 187px; left: 34px; border-radius: 7px 7px 7px 7px;}.silex-id-1669835241022-131 {width: 50px; min-height: 23px; position: absolute; top: -0.3108367919921875px; left: 13px;}.silex-id-1669835241022-132 {width: 78px; min-height: 39px; background-color: rgba(239,240,246,1); position: absolute; top: 187px; left: 134px; border-radius: 7px 7px 7px 7px;}.silex-id-1669835241022-133 {width: 60px; min-height: 23px; position: absolute; top: -0.3108367919921875px; left: 13px;}.silex-id-1669835241023-134 {width: 64px; min-height: 39px; background-color: rgba(239,240,246,1); position: absolute; top: 187px; left: 254px; border-radius: 7px 7px 7px 7px;}.silex-id-1669835241023-135 {width: 60px; min-height: 23px; position: absolute; top: -0.3108367919921875px; left: 13px;}.silex-id-1669835241023-136 {width: 36px; height: 36px; position: absolute; top: 27.999954223632812px; left: 34.01232421398163px;}.silex-id-1669835241023-137 {width: 285px; min-height: 72px; position: absolute; top: 67.01063537597656px; left: 34.00023865699768px;}.silex-id-1669835241023-138 {width: 66px; min-height: 56px; position: absolute; top: 120.40919494628906px; left: 59.99998474121094px;}.silex-id-1669835241023-139 {width: 82px; min-height: 56px; position: absolute; top: 120.41102600097656px; left: 319.0002384185791px;}.silex-id-1669835241023-140 {width: 82px; min-height: 56px; position: absolute; top: 120.41157531738281px; left: 172.00021994113922px;}.silex-id-1669835241023-141 {width: 17px; height: 16px; position: absolute; top: 139px; left: 290px;}.silex-id-1669835241023-142 {width: 12px; height: 16px; position: absolute; top: 138px; left: 150px;}.silex-id-1669835241023-143 {width: 236px; min-height: 84px; position: absolute; top: 6.987495422363281px; left: 82px;}.silex-id-1669835241023-144 {width: 6px; height: 14px; position: absolute; top: 139px; left: 46px;}.silex-id-1669835241023-145 {width: 9px; height: 17px; position: absolute; top: 137px; left: 37px;}.silex-id-1669835282258-163 {width: 422px; min-height: 253px; background-color: rgba(255,255,255,1); position: absolute; top: 1838px; left: 520.0001068115234px; border-radius: 20px 20px 20px 20px;}.silex-id-1669835282258-164 {width: 58px; min-height: 39px; background-color: rgba(239,240,246,1); position: absolute; top: 187px; left: 34px; border-radius: 7px 7px 7px 7px;}.silex-id-1669835282258-165 {width: 50px; min-height: 23px; position: absolute; top: -0.3108367919921875px; left: 13px;}.silex-id-1669835282258-166 {width: 78px; min-height: 39px; background-color: rgba(239,240,246,1); position: absolute; top: 187px; left: 134px; border-radius: 7px 7px 7px 7px;}.silex-id-1669835282258-167 {width: 60px; min-height: 23px; position: absolute; top: -0.3108367919921875px; left: 13px;}.silex-id-1669835282258-168 {width: 64px; min-height: 39px; background-color: rgba(239,240,246,1); position: absolute; top: 187px; left: 254px; border-radius: 7px 7px 7px 7px;}.silex-id-1669835282258-169 {width: 60px; min-height: 23px; position: absolute; top: -0.3108367919921875px; left: 13px;}.silex-id-1669835282258-170 {width: 36px; height: 36px; position: absolute; top: 27.999954223632812px; left: 34.01232421398163px;}.silex-id-1669835282258-171 {width: 285px; min-height: 72px; position: absolute; top: 67.01063537597656px; left: 34.00023865699768px;}.silex-id-1669835282258-172 {width: 66px; min-height: 56px; position: absolute; top: 120.40919494628906px; left: 59.99998474121094px;}.silex-id-1669835282258-173 {width: 82px; min-height: 56px; position: absolute; top: 120.41102600097656px; left: 319.0002384185791px;}.silex-id-1669835282258-174 {width: 82px; min-height: 56px; position: absolute; top: 120.41157531738281px; left: 172.00021994113922px;}.silex-id-1669835282258-175 {width: 17px; height: 16px; position: absolute; top: 139px; left: 290px;}.silex-id-1669835282258-176 {width: 12px; height: 16px; position: absolute; top: 138px; left: 150px;}.silex-id-1669835282258-177 {width: 236px; min-height: 84px; position: absolute; top: 6.987495422363281px; left: 82px;}.silex-id-1669835282258-178 {width: 6px; height: 14px; position: absolute; top: 139px; left: 46px;}.silex-id-1669835282258-179 {width: 9px; height: 17px; position: absolute; top: 137px; left: 37px;}.silex-id-1669835313830-197 {width: 422px; min-height: 253px; background-color: rgba(255,255,255,1); position: absolute; top: 1838.7626190185547px; left: 58px; border-radius: 20px 20px 20px 20px;}.silex-id-1669835313830-198 {width: 58px; min-height: 39px; background-color: rgba(239,240,246,1); position: absolute; top: 187px; left: 34px; border-radius: 7px 7px 7px 7px;}.silex-id-1669835313830-199 {width: 50px; min-height: 23px; position: absolute; top: -0.3108367919921875px; left: 13px;}.silex-id-1669835313830-200 {width: 78px; min-height: 39px; background-color: rgba(239,240,246,1); position: absolute; top: 187px; left: 134px; border-radius: 7px 7px 7px 7px;}.silex-id-1669835313830-201 {width: 60px; min-height: 23px; position: absolute; top: -0.3108367919921875px; left: 13px;}.silex-id-1669835313830-202 {width: 64px; min-height: 39px; background-color: rgba(239,240,246,1); position: absolute; top: 187px; left: 254px; border-radius: 7px 7px 7px 7px;}.silex-id-1669835313830-203 {width: 60px; min-height: 23px; position: absolute; top: -0.3108367919921875px; left: 13px;}.silex-id-1669835313830-204 {width: 36px; height: 36px; position: absolute; top: 27.999954223632812px; left: 34.01232421398163px;}.silex-id-1669835313830-205 {width: 285px; min-height: 72px; position: absolute; top: 67.01063537597656px; left: 34.00023865699768px;}.silex-id-1669835313830-206 {width: 66px; min-height: 56px; position: absolute; top: 120.40919494628906px; left: 59.99998474121094px;}.silex-id-1669835313830-207 {width: 82px; min-height: 56px; position: absolute; top: 120.41102600097656px; left: 319.0002384185791px;}.silex-id-1669835313830-208 {width: 82px; min-height: 56px; position: absolute; top: 120.41157531738281px; left: 172.00021994113922px;}.silex-id-1669835313830-209 {width: 17px; height: 16px; position: absolute; top: 139px; left: 290px;}.silex-id-1669835313830-210 {width: 12px; height: 16px; position: absolute; top: 138px; left: 150px;}.silex-id-1669835313830-211 {width: 236px; min-height: 84px; position: absolute; top: 6.987495422363281px; left: 82px;}.silex-id-1669835313830-212 {width: 6px; height: 14px; position: absolute; top: 139px; left: 46px;}.silex-id-1669835313830-213 {width: 9px; height: 17px; position: absolute; top: 137px; left: 37px;}.silex-id-1669835345525-231 {width: 422px; min-height: 253px; background-color: rgba(255,255,255,1); position: absolute; top: 1838px; left: 982px; border-radius: 20px 20px 20px 20px;}.silex-id-1669835345525-232 {width: 58px; min-height: 39px; background-color: rgba(239,240,246,1); position: absolute; top: 187px; left: 34px; border-radius: 7px 7px 7px 7px;}.silex-id-1669835345525-233 {width: 50px; min-height: 23px; position: absolute; top: -0.3108367919921875px; left: 13px;}.silex-id-1669835345525-234 {width: 78px; min-height: 39px; background-color: rgba(239,240,246,1); position: absolute; top: 187px; left: 134px; border-radius: 7px 7px 7px 7px;}.silex-id-1669835345525-235 {width: 60px; min-height: 23px; position: absolute; top: -0.3108367919921875px; left: 13px;}.silex-id-1669835345525-236 {width: 64px; min-height: 39px; background-color: rgba(239,240,246,1); position: absolute; top: 187px; left: 254px; border-radius: 7px 7px 7px 7px;}.silex-id-1669835345525-237 {width: 60px; min-height: 23px; position: absolute; top: -0.3108367919921875px; left: 13px;}.silex-id-1669835345525-238 {width: 36px; height: 36px; position: absolute; top: 27.999954223632812px; left: 34.01232421398163px;}.silex-id-1669835345525-239 {width: 285px; min-height: 72px; position: absolute; top: 67.01063537597656px; left: 34.00023865699768px;}.silex-id-1669835345525-240 {width: 66px; min-height: 56px; position: absolute; top: 120.40919494628906px; left: 59.99998474121094px;}.silex-id-1669835345525-241 {width: 82px; min-height: 56px; position: absolute; top: 120.41102600097656px; left: 319.0002384185791px;}.silex-id-1669835345525-242 {width: 82px; min-height: 56px; position: absolute; top: 120.41157531738281px; left: 172.00021994113922px;}.silex-id-1669835345525-243 {width: 17px; height: 16px; position: absolute; top: 139px; left: 290px;}.silex-id-1669835345525-244 {width: 12px; height: 16px; position: absolute; top: 138px; left: 150px;}.silex-id-1669835345525-245 {width: 236px; min-height: 84px; position: absolute; top: 6.987495422363281px; left: 82px;}.silex-id-1669835345525-246 {width: 6px; height: 14px; position: absolute; top: 139px; left: 46px;}.silex-id-1669835345525-247 {width: 9px; height: 17px; position: absolute; top: 137px; left: 37px;}.silex-id-1669891065904-0 {width: 208px; min-height: 41px; position: absolute; top: 2354px; left: 616px;}.silex-id-1669892369634-1 {width: 597px; min-height: 27px; position: absolute; top: 2425px; left: 430px;}.silex-id-1669892968101-0 {width: 194px; height: 414px; position: absolute; top: 2500px; left: 200px;}.silex-id-1669893305792-1 {width: 501px; min-height: 59px; position: absolute; top: 2548px; left: 622px;}.silex-id-1669893405487-2 {width: 583px; min-height: 224px; position: absolute; top: 2619px; left: 622px;}.silex-id-1669893656139-3 {width: 1181px; height: 550px; position: absolute; top: 3099px; left: 105px;}.silex-id-1669894542514-4 {width: 372px; min-height: 59px; position: absolute; top: 3220px; left: 662px;}.silex-id-1669895961763-6 {width: 377px; min-height: 95px; position: absolute; top: 3325px; left: 665px;}.silex-id-1669896474946-7 {width: 184px; height: 50px; position: absolute; top: 3450px; left: 670px;}.silex-id-1669896543125-9 {width: 164px; height: 50px; position: absolute; top: 3450px; left: 878px;}.silex-id-1669896788218-10 {width: 397px; min-height: 41px; position: absolute; top: 3707px; left: 521px;}.silex-id-1669896927684-11 {width: 597px; min-height: 27px; position: absolute; top: 3760px; left: 418px;}.silex-id-1669897100217-12 {width: 550px; min-height: 180px; position: absolute; top: 3909px; left: 105.42013549804688px;}.silex-id-1669897645387-15 {position: static; background-color: rgba(255,255,255,1);}.silex-id-1669897645388-16 {min-height: 521px; background-color: rgb(255, 255, 255); position: relative; margin-left: auto; margin-right: auto;}.silex-id-1669897697178-17 {width: 1440px; min-height: 521px; background-color: rgba(40,55,121,1); position: absolute; top: -0.5195465087890625px;}.silex-id-1669898190202-18 {width: 476px; min-height: 71px; position: absolute; top: 43px; left: 152px;}.silex-id-1669898596819-19 {width: 368px; min-height: 89px; position: absolute; top: 100px; left: 152px;}.silex-id-1669898776055-20 {width: 344px; min-height: 29px; position: absolute; top: 70.86251831054688px; left: 645.9874877929688px;}.silex-id-1669899028076-21 {width: 354px; min-height: 45px; background-color: transparent; position: absolute; top: 117.92500305175781px; left: 645.9124755859375px; border-radius: 20px 20px 20px 20px;}.silex-id-1669901038396-0 {width: 81px; min-height: 15px; position: absolute; top: -2px; left: 23.076194763183594px;}.silex-id-1669901639624-1 {width: 150px; min-height: 48px; background-color: rgb(255, 255, 255); position: absolute; top: 117px; left: 1026px;}.silex-id-1669901890830-2 {width: 73px; min-height: 19px; position: absolute; top: -0.412384033203125px; left: 40px;}.silex-id-1669902103702-3 {width: 123px; height: 110px; position: absolute; top: 50px; left: 173px;}.silex-id-1669902180899-4 {width: 1440px; min-height: 262px; background-color: rgba(27,113,161,1); position: absolute; top: 200px; left: 0px;}.silex-id-1669902552127-5 {width: 133px; min-height: 18px; position: absolute; top: 30px; left: 445px;}.silex-id-1669902680127-6 {width: 100px; min-height: 48px; position: absolute; top: 70px; left: 445px;}.silex-id-1669902810056-7 {width: 100px; min-height: 48px; position: absolute; top: 101px; left: 445.00062561035156px;}.silex-id-1669902833379-9 {width: 100px; min-height: 48px; position: absolute; top: 132px; left: 445.01239013671875px;}.silex-id-1669902964008-11 {width: 120px; min-height: 18px; position: absolute; top: 30px; left: 699px;}.silex-id-1669903035039-13 {width: 100px; min-height: 48px; position: absolute; top: 70px; left: 698.9754943847656px;}.silex-id-1669903095831-15 {width: 100px; min-height: 48px; position: absolute; top: 101px; left: 698.7625122070312px;}.silex-id-1669903149566-17 {width: 100px; min-height: 48px; position: absolute; top: 132px; left: 698.4381408691406px;}.silex-id-1669903234703-19 {width: 92px; min-height: 19px; position: absolute; top: 30px; left: 886px;}.silex-id-1669903344046-21 {width: 130px; min-height: 19px; position: absolute; top: 70px; left: 886.0014038085938px;}.silex-id-1669903356484-23 {width: 100px; min-height: 48px; position: absolute; top: 101.17941284179688px; left: 885.6013793945312px;}.silex-id-1669903372060-25 {width: 100px; min-height: 48px; position: absolute; top: 132px; left: 885.4008178710938px;}.silex-id-1669903501073-27 {width: 147px; min-height: 18px; position: absolute; top: 30px; left: 1139px;}.silex-id-1669903575017-31 {width: 100px; min-height: 48px; position: absolute; top: 70.17340087890625px; left: 1139px;}.silex-id-1669903585639-33 {width: 100px; min-height: 48px; position: absolute; top: 101.15887451171875px; left: 1139px;}.silex-id-1669903600705-35 {width: 100px; min-height: 48px; position: absolute; top: 132px; left: 1139px;}.silex-id-1669903718522-37 {width: 269px; min-height: 12px; position: absolute; top: 475px; left: 226px;}.silex-id-1669903898784-38 {width: 202px; min-height: 12px; position: absolute; top: 475px; left: 1075px;}@media only screen and (max-width: 480px) {}</style>
       <title></title>
-      <style class="silex-prodotype-style" data-style-id="all-style">.text-element > .silex-element-content {
-         font-family: 'Roboto', sans-serif;
-         }
-      </style>
+      <style class="silex-prodotype-style" data-style-id="all-style">.text-element > .silex-element-content {font-family: 'Roboto', sans-serif;}</style>
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <style class="silex-style-settings">.website-width {
-         width: 1440px;
-         }
-         @media (min-width: 481px) {
-         .silex-editor {
-         min-width: 1640px;
-         }
-         }
-      </style>
+      <style class="silex-style-settings">.website-width {width: 1440px;}@media (min-width: 481px) {.silex-editor {min-width: 1640px;}}</style>
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" class="silex-custom-font">
       <link href="https://fonts.googleapis.com/css?family=Open%20Sans" rel="stylesheet" class="silex-custom-font">
       <link href="https://fonts.cdnfonts.com/css/amazon-ember" rel="stylesheet" class="silex-custom-font">
    </head>
-   <body data-silex-id="body-initial"
-      class="body-initial all-style enable-mobile prevent-resizable prevent-selectable editable-style silex-runtime"
-      data-silex-type="container-element" style="">
-      <section data-silex-type="container-element"
-         class="container-element editable-style silex-id-1478366444112-1 section-element prevent-resizable page-page-1 paged-element"
-         data-silex-id="silex-id-1478366444112-1" style="">
-         <div data-silex-type="container-element"
-            class="editable-style silex-element-content silex-id-1478366444112-0 container-element website-width"
-            data-silex-id="silex-id-1478366444112-0" style="">
-            <div data-silex-type="image-element" class="editable-style image-element silex-id-1669787567652-0 top-bar-logo"
-               data-silex-id="silex-id-1669787567652-0" style=""><img src="../assets/logo%201.svg"></div>
-            <div data-silex-type="container-element"
-               class="editable-style container-element silex-id-1669787651206-1 location-input"
-               data-silex-id="silex-id-1669787651206-1" style="">
-               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669787741355-2"
-                  data-silex-id="silex-id-1669787741355-2" style=""><img src="../assets/vector_location.svg"></div>
-               <div data-silex-type="text-element"
-                  class="editable-style text-element silex-id-1669787843321-3 header-input-placeholder"
-                  data-silex-id="silex-id-1669787843321-3" style="">
+   <body data-silex-id="body-initial" class="body-initial all-style enable-mobile prevent-resizable prevent-selectable editable-style silex-runtime" data-silex-type="container-element" style="">
+      <section data-silex-type="container-element" class="container-element editable-style silex-id-1478366444112-1 section-element prevent-resizable page-page-1 paged-element" data-silex-id="silex-id-1478366444112-1" style="">
+         <div data-silex-type="container-element" class="editable-style silex-element-content silex-id-1478366444112-0 container-element website-width" data-silex-id="silex-id-1478366444112-0" style="">
+            <div data-silex-type="image-element" class="editable-style image-element silex-id-1669787567652-0 top-bar-logo" data-silex-id="silex-id-1669787567652-0" style=""><img src="../assets/logo%201.svg"></div>
+            <div data-silex-type="container-element" class="editable-style container-element silex-id-1669787651206-1 location-input" data-silex-id="silex-id-1669787651206-1" style="">
+               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669787741355-2" data-silex-id="silex-id-1669787741355-2" style=""><img src="../assets/vector_location.svg"></div>
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669787843321-3 header-input-placeholder" data-silex-id="silex-id-1669787843321-3" style="">
                   <div class="silex-element-content normal">
                      <p>Location</p>
                   </div>
                </div>
             </div>
-            <div data-silex-type="container-element"
-               class="editable-style container-element silex-id-1669788969795-4 search-input"
-               data-silex-id="silex-id-1669788969795-4" style="">
-               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669788969795-5"
-                  data-silex-id="silex-id-1669788969795-5" style=""><img src="../assets/vector_search.svg"></div>
-               <div data-silex-type="text-element"
-                  class="editable-style text-element silex-id-1669788969795-6 header-input-placeholder"
-                  data-silex-id="silex-id-1669788969795-6" style="">
+            <div data-silex-type="container-element" class="editable-style container-element silex-id-1669788969795-4 search-input" data-silex-id="silex-id-1669788969795-4" style="">
+               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669788969795-5" data-silex-id="silex-id-1669788969795-5" style=""><img src="../assets/vector_search.svg"></div>
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669788969795-6 header-input-placeholder" data-silex-id="silex-id-1669788969795-6" style="">
                   <div class="silex-element-content normal">
                      <p id="publish-static-jobs-search">Search for Doctors, hospital &amp; others....</p>
                      <div id="react-search-component"></div>
                   </div>
                </div>
             </div>
-            <a data-silex-type="text-element"
-               class="editable-style text-element silex-id-1669805752036-10 top-bar-menu text-decoration"
-               data-silex-id="silex-id-1669805752036-10" style="" href="appointments">
+            <a data-silex-type="text-element" class="editable-style text-element silex-id-1669805752036-10 top-bar-menu text-decoration" data-silex-id="silex-id-1669805752036-10" style="" href="appointments">
                <div class="silex-element-content normal">
                   <p>Appointments</p>
                </div>
             </a>
-            <a data-silex-type="text-element"
-               class="editable-style text-element silex-id-1669805881128-11 top-bar-menu text-decoration"
-               data-silex-id="silex-id-1669805881128-11" style="" href="consult_doctors">
+            <a data-silex-type="text-element" class="editable-style text-element silex-id-1669805881128-11 top-bar-menu text-decoration" data-silex-id="silex-id-1669805881128-11" style="" href="consult_doctors">
                <div class="silex-element-content normal">
                   <p>Consult Doctors</p>
                </div>
             </a>
-            <a data-silex-type="text-element"
-               class="editable-style text-element silex-id-1669805905668-13 top-bar-menu text-decoration"
-               data-silex-id="silex-id-1669805905668-13" style="" href="diagnostics">
+            <a data-silex-type="text-element" class="editable-style text-element silex-id-1669805905668-13 top-bar-menu text-decoration" data-silex-id="silex-id-1669805905668-13" style="" href="diagnostics">
                <div class="silex-element-content normal">
                   <p>Diagnostics</p>
-                  <span class="_wysihtml-temp-caret-fix"
-                     style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span>
+                  <span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span>
                </div>
             </a>
-            <a data-silex-type="container-element"
-               class="editable-style container-element silex-id-1669805964329-15 top-bar-btn"
-               data-silex-id="silex-id-1669805964329-15" style="" href="login">
-               <div data-silex-type="text-element"
-                  class="editable-style text-element silex-id-1669806060988-16 top-bar-btn-label text-decoration"
-                  data-silex-id="silex-id-1669806060988-16" style="">
+            <a data-silex-type="container-element" class="editable-style container-element silex-id-1669805964329-15 top-bar-btn" data-silex-id="silex-id-1669805964329-15" style="" href="login">
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669806060988-16 top-bar-btn-label text-decoration" data-silex-id="silex-id-1669806060988-16" style="">
                   <div class="silex-element-content normal">
                      <p>Login/Register</p>
                   </div>
@@ -1881,590 +71,406 @@
             </a>
          </div>
       </section>
-      <section data-silex-type="container-element"
-         class="editable-style section-element silex-id-1474394621033-3 page-page-1 paged-element"
-         data-silex-id="silex-id-1474394621033-3" style="">
-         <div data-silex-type="container-element"
-            class="editable-style container-element silex-id-1474394621032-2 website-width"
-            data-silex-id="silex-id-1474394621032-2" title="" style="">
-            <div data-silex-type="text-element" class="editable-style text-element silex-id-1669828621431-9 specialty-title"
-               data-silex-id="silex-id-1669828621431-9" style="">
+      <section data-silex-type="container-element" class="editable-style section-element silex-id-1474394621033-3 page-page-1 paged-element" data-silex-id="silex-id-1474394621033-3" style="">
+         
+         
+      <div data-silex-type="container-element" class="editable-style container-element silex-id-1474394621032-2 website-width" data-silex-id="silex-id-1474394621032-2" title="" style="">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div id="hello-react"></div>
+            
+            
+            <div data-silex-type="container-element" class="editable-style container-element silex-id-1669827582934-3" data-silex-id="silex-id-1669827582934-3" style="">
+               <div data-silex-type="container-element" class="editable-style container-element silex-id-1669828022899-6 rectangle-simple" data-silex-id="silex-id-1669828022899-6" style=""></div>
+               <div data-silex-type="container-element" class="editable-style container-element silex-id-1669836835068-0 rectangle-simple" data-silex-id="silex-id-1669836835068-0" style=""></div>
+               <div data-silex-type="container-element" class="editable-style container-element silex-id-1669827786418-4 rectangle-simple" data-silex-id="silex-id-1669827786418-4" style=""></div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+         <div data-silex-type="text-element" class="editable-style text-element silex-id-1669828621431-9 specialty-title" data-silex-id="silex-id-1669828621431-9" style="">
                <div class="silex-element-content normal">
                   <p>Select your Specialty</p>
                </div>
-            </div>
-            <div data-silex-type="text-element" class="editable-style text-element silex-id-1669828918421-11 specialty-text"
-               data-silex-id="silex-id-1669828918421-11" style="">
+            </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1669828918421-11 specialty-text" data-silex-id="silex-id-1669828918421-11" style="">
                <div class="silex-element-content normal">
                   <p>Private online consultations with verified doctors in all
                      specialists.
                   </p>
                </div>
-            </div>
-            <div data-silex-type="image-element" class="editable-style image-element silex-id-1669830023683-12"
-               data-silex-id="silex-id-1669830023683-12" style=""><img src="../assets/cdc-1.png"></div>
-            <div data-silex-type="image-element" class="editable-style image-element silex-id-1669830131104-13"
-               data-silex-id="silex-id-1669830131104-13" style=""><img src="../assets/cdc-2.png"></div>
-            <div data-silex-type="image-element" class="editable-style image-element silex-id-1669830179463-14"
-               data-silex-id="silex-id-1669830179463-14" style=""><img src="../assets/cdc-3.png"></div>
-            <div data-silex-type="image-element" class="editable-style image-element silex-id-1669830218142-15"
-               data-silex-id="silex-id-1669830218142-15" style=""><img src="../assets/cdc-4.png"></div>
-            <div data-silex-type="text-element" class="editable-style text-element silex-id-1669830389128-16 open-jobs-title"
-               data-silex-id="silex-id-1669830389128-16" style="">
+            </div><div data-silex-type="image-element" class="editable-style image-element silex-id-1669830023683-12" data-silex-id="silex-id-1669830023683-12" style=""><img src="../assets/cdc-1.png"></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1669830131104-13" data-silex-id="silex-id-1669830131104-13" style=""><img src="../assets/cdc-2.png"></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1669830179463-14" data-silex-id="silex-id-1669830179463-14" style=""><img src="../assets/cdc-3.png"></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1669830218142-15" data-silex-id="silex-id-1669830218142-15" style=""><img src="../assets/cdc-4.png"></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1669830389128-16 open-jobs-title" data-silex-id="silex-id-1669830389128-16" style="">
                <div class="silex-element-content normal">
                   <p>Open Jobs</p>
                </div>
-            </div>
-            <div data-silex-type="text-element" class="editable-style text-element silex-id-1669830550713-17 open-jobs-content"
-               data-silex-id="silex-id-1669830550713-17" style="">
+            </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1669830550713-17 open-jobs-content" data-silex-id="silex-id-1669830550713-17" style="">
                <div class="silex-element-content normal">
                   <p>We provide to you the best choices for you. Adjust it to your health
                      needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type
                      of service is suitable for your health.
                   </p>
                </div>
-            </div>
-            <div id="publish-static-jobs1" data-silex-type="container-element"
-               class="editable-style container-element silex-id-1669830811913-18 job-card-container"
-               data-silex-id="silex-id-1669830811913-18" style="">
-               <div data-silex-type="container-element"
-                  class="editable-style container-element silex-id-1669833475302-10 job-card-skill-label"
-                  data-silex-id="silex-id-1669833475302-10" style="">
-                  <div data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669833711441-11 job-card-skill-text"
-                     data-silex-id="silex-id-1669833711441-11" style="">
+            </div><div id="publish-static-jobs1" data-silex-type="container-element" class="editable-style container-element silex-id-1669830811913-18 job-card-container" data-silex-id="silex-id-1669830811913-18" style="">
+               <div data-silex-type="container-element" class="editable-style container-element silex-id-1669833475302-10 job-card-skill-label" data-silex-id="silex-id-1669833475302-10" style="">
+                  <div data-silex-type="text-element" class="editable-style text-element silex-id-1669833711441-11 job-card-skill-text" data-silex-id="silex-id-1669833711441-11" style="">
                      <div class="silex-element-content normal">
                         <p>Nursing</p>
                      </div>
                   </div>
                </div>
-               <div data-silex-type="container-element"
-                  class="editable-style container-element silex-id-1669833898183-12 job-card-skill-label"
-                  data-silex-id="silex-id-1669833898183-12" style="">
-                  <div data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669833898183-13 job-card-skill-text"
-                     data-silex-id="silex-id-1669833898183-13" style="">
+               <div data-silex-type="container-element" class="editable-style container-element silex-id-1669833898183-12 job-card-skill-label" data-silex-id="silex-id-1669833898183-12" style="">
+                  <div data-silex-type="text-element" class="editable-style text-element silex-id-1669833898183-13 job-card-skill-text" data-silex-id="silex-id-1669833898183-13" style="">
                      <div class="silex-element-content normal">
                         <p>Healthcare</p>
                      </div>
                   </div>
                </div>
-               <div data-silex-type="container-element"
-                  class="editable-style container-element silex-id-1669834058897-16 job-card-skill-label"
-                  data-silex-id="silex-id-1669834058897-16" style="">
-                  <div data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669834058897-17 job-card-skill-text"
-                     data-silex-id="silex-id-1669834058897-17" style="">
+               <div data-silex-type="container-element" class="editable-style container-element silex-id-1669834058897-16 job-card-skill-label" data-silex-id="silex-id-1669834058897-16" style="">
+                  <div data-silex-type="text-element" class="editable-style text-element silex-id-1669834058897-17 job-card-skill-text" data-silex-id="silex-id-1669834058897-17" style="">
                      <div class="silex-element-content normal">
                         <p>Empathy</p>
                      </div>
                   </div>
                </div>
-               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669830956996-19"
-                  data-silex-id="silex-id-1669830956996-19" style=""><img src="../assets/healthcare_job_logo.svg"></div>
-               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669831752895-0 job-card-pay-rate"
-                  data-silex-id="silex-id-1669831752895-0" style="">
+               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669830956996-19" data-silex-id="silex-id-1669830956996-19" style=""><img src="../assets/healthcare_job_logo.svg"></div>
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669831752895-0 job-card-pay-rate" data-silex-id="silex-id-1669831752895-0" style="">
                   <div class="silex-element-content normal">
                      <p>$50 - $100 / hr</p>
                   </div>
                </div>
-               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669832598464-3 job-card-company"
-                  data-silex-id="silex-id-1669832598464-3" style="">
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669832598464-3 job-card-company" data-silex-id="silex-id-1669832598464-3" style="">
                   <div class="silex-element-content normal">
                      <p>Trafalgar</p>
                   </div>
                </div>
-               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669833370204-8 job-card-company"
-                  data-silex-id="silex-id-1669833370204-8" style="">
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669833370204-8 job-card-company" data-silex-id="silex-id-1669833370204-8" style="">
                   <div class="silex-element-content normal">
                      <p>Delhi, India</p>
                   </div>
                </div>
-               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669833091154-6 job-card-company"
-                  data-silex-id="silex-id-1669833091154-6" style="">
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669833091154-6 job-card-company" data-silex-id="silex-id-1669833091154-6" style="">
                   <div class="silex-element-content normal">
                      <p>Delhi, India</p>
                   </div>
                </div>
-               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669833278958-7"
-                  data-silex-id="silex-id-1669833278958-7" style=""><img src="../assets/vector_case_logo.svg"></div>
-               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669832985512-5"
-                  data-silex-id="silex-id-1669832985512-5" style=""><img src="../assets/vector_location_logo.svg"></div>
-               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669831014326-20 job-card-title"
-                  data-silex-id="silex-id-1669831014326-20" style="">
+               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669833278958-7" data-silex-id="silex-id-1669833278958-7" style=""><img src="../assets/vector_case_logo.svg"></div>
+               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669832985512-5" data-silex-id="silex-id-1669832985512-5" style=""><img src="../assets/vector_location_logo.svg"></div>
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669831014326-20 job-card-title" data-silex-id="silex-id-1669831014326-20" style="">
                   <div class="silex-element-content normal">
                      <p>Healthcare Executive</p>
                   </div>
                </div>
-               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669832380766-2"
-                  data-silex-id="silex-id-1669832380766-2" style=""><img src="../assets/vector_1_2.svg"></div>
-               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669832053827-1"
-                  data-silex-id="silex-id-1669832053827-1" style=""><img src="../assets/vector_1_1.svg"></div>
-            </div>
-            <div id="publish-static-jobs2" data-silex-type="container-element"
-               class="editable-style container-element silex-id-1669835206186-95 job-card-container"
-               data-silex-id="silex-id-1669835206186-95" style="">
-               <div data-silex-type="container-element"
-                  class="editable-style container-element silex-id-1669835206186-96 job-card-skill-label"
-                  data-silex-id="silex-id-1669835206186-96" style="">
-                  <div data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669835206186-97 job-card-skill-text"
-                     data-silex-id="silex-id-1669835206186-97" style="">
+               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669832380766-2" data-silex-id="silex-id-1669832380766-2" style=""><img src="../assets/vector_1_2.svg"></div>
+               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669832053827-1" data-silex-id="silex-id-1669832053827-1" style=""><img src="../assets/vector_1_1.svg"></div>
+            </div><div id="publish-static-jobs2" data-silex-type="container-element" class="editable-style container-element silex-id-1669835206186-95 job-card-container" data-silex-id="silex-id-1669835206186-95" style="">
+               <div data-silex-type="container-element" class="editable-style container-element silex-id-1669835206186-96 job-card-skill-label" data-silex-id="silex-id-1669835206186-96" style="">
+                  <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835206186-97 job-card-skill-text" data-silex-id="silex-id-1669835206186-97" style="">
                      <div class="silex-element-content normal">
                         <p>Nursing</p>
                      </div>
                   </div>
                </div>
-               <div data-silex-type="container-element"
-                  class="editable-style container-element silex-id-1669835206186-98 job-card-skill-label"
-                  data-silex-id="silex-id-1669835206186-98" style="">
-                  <div data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669835206186-99 job-card-skill-text"
-                     data-silex-id="silex-id-1669835206186-99" style="">
+               <div data-silex-type="container-element" class="editable-style container-element silex-id-1669835206186-98 job-card-skill-label" data-silex-id="silex-id-1669835206186-98" style="">
+                  <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835206186-99 job-card-skill-text" data-silex-id="silex-id-1669835206186-99" style="">
                      <div class="silex-element-content normal">
                         <p>Healthcare</p>
                      </div>
                   </div>
                </div>
-               <div data-silex-type="container-element"
-                  class="editable-style container-element silex-id-1669835206186-100 job-card-skill-label"
-                  data-silex-id="silex-id-1669835206186-100" style="">
-                  <div data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669835206186-101 job-card-skill-text"
-                     data-silex-id="silex-id-1669835206186-101" style="">
+               <div data-silex-type="container-element" class="editable-style container-element silex-id-1669835206186-100 job-card-skill-label" data-silex-id="silex-id-1669835206186-100" style="">
+                  <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835206186-101 job-card-skill-text" data-silex-id="silex-id-1669835206186-101" style="">
                      <div class="silex-element-content normal">
                         <p>Empathy</p>
                      </div>
                   </div>
                </div>
-               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835206186-102"
-                  data-silex-id="silex-id-1669835206186-102" style=""><img src="../assets/healthcare_job_logo.svg"></div>
-               <div data-silex-type="text-element"
-                  class="editable-style text-element silex-id-1669835206186-103 job-card-pay-rate"
-                  data-silex-id="silex-id-1669835206186-103" style="">
+               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835206186-102" data-silex-id="silex-id-1669835206186-102" style=""><img src="../assets/healthcare_job_logo.svg"></div>
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835206186-103 job-card-pay-rate" data-silex-id="silex-id-1669835206186-103" style="">
                   <div class="silex-element-content normal">
                      <p>$50 - $100 / hr</p>
                   </div>
                </div>
-               <div data-silex-type="text-element"
-                  class="editable-style text-element silex-id-1669835206186-104 job-card-company"
-                  data-silex-id="silex-id-1669835206186-104" style="">
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835206186-104 job-card-company" data-silex-id="silex-id-1669835206186-104" style="">
                   <div class="silex-element-content normal">
                      <p>Trafalgar</p>
                   </div>
                </div>
-               <div data-silex-type="text-element"
-                  class="editable-style text-element silex-id-1669835206186-105 job-card-company"
-                  data-silex-id="silex-id-1669835206186-105" style="">
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835206186-105 job-card-company" data-silex-id="silex-id-1669835206186-105" style="">
                   <div class="silex-element-content normal">
                      <p>Delhi, India</p>
                   </div>
                </div>
-               <div data-silex-type="text-element"
-                  class="editable-style text-element silex-id-1669835206186-106 job-card-company"
-                  data-silex-id="silex-id-1669835206186-106" style="">
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835206186-106 job-card-company" data-silex-id="silex-id-1669835206186-106" style="">
                   <div class="silex-element-content normal">
                      <p>Delhi, India</p>
                   </div>
                </div>
-               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835206186-107"
-                  data-silex-id="silex-id-1669835206186-107" style=""><img src="../assets/vector_case_logo.svg"></div>
-               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835206186-108"
-                  data-silex-id="silex-id-1669835206186-108" style=""><img src="../assets/vector_location_logo.svg"></div>
-               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835206186-109 job-card-title"
-                  data-silex-id="silex-id-1669835206186-109" style="">
+               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835206186-107" data-silex-id="silex-id-1669835206186-107" style=""><img src="../assets/vector_case_logo.svg"></div>
+               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835206186-108" data-silex-id="silex-id-1669835206186-108" style=""><img src="../assets/vector_location_logo.svg"></div>
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835206186-109 job-card-title" data-silex-id="silex-id-1669835206186-109" style="">
                   <div class="silex-element-content normal">
                      <p>Healthcare Executive</p>
                   </div>
                </div>
-               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835206186-110"
-                  data-silex-id="silex-id-1669835206186-110" style=""><img src="../assets/vector_1_2.svg"></div>
-               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835206186-111"
-                  data-silex-id="silex-id-1669835206186-111" style=""><img src="../assets/vector_1_1.svg"></div>
-            </div>
-            <div id="publish-static-jobs3" data-silex-type="container-element"
-               class="editable-style container-element silex-id-1669835345525-231 job-card-container"
-               data-silex-id="silex-id-1669835345525-231" style="">
-               <div data-silex-type="container-element"
-                  class="editable-style container-element silex-id-1669835345525-232 job-card-skill-label"
-                  data-silex-id="silex-id-1669835345525-232" style="">
-                  <div data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669835345525-233 job-card-skill-text"
-                     data-silex-id="silex-id-1669835345525-233" style="">
+               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835206186-110" data-silex-id="silex-id-1669835206186-110" style=""><img src="../assets/vector_1_2.svg"></div>
+               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835206186-111" data-silex-id="silex-id-1669835206186-111" style=""><img src="../assets/vector_1_1.svg"></div>
+            </div><div id="publish-static-jobs3" data-silex-type="container-element" class="editable-style container-element silex-id-1669835345525-231 job-card-container" data-silex-id="silex-id-1669835345525-231" style="">
+               <div data-silex-type="container-element" class="editable-style container-element silex-id-1669835345525-232 job-card-skill-label" data-silex-id="silex-id-1669835345525-232" style="">
+                  <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835345525-233 job-card-skill-text" data-silex-id="silex-id-1669835345525-233" style="">
                      <div class="silex-element-content normal">
                         <p>Nursing</p>
                      </div>
                   </div>
                </div>
-               <div data-silex-type="container-element"
-                  class="editable-style container-element silex-id-1669835345525-234 job-card-skill-label"
-                  data-silex-id="silex-id-1669835345525-234" style="">
-                  <div data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669835345525-235 job-card-skill-text"
-                     data-silex-id="silex-id-1669835345525-235" style="">
+               <div data-silex-type="container-element" class="editable-style container-element silex-id-1669835345525-234 job-card-skill-label" data-silex-id="silex-id-1669835345525-234" style="">
+                  <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835345525-235 job-card-skill-text" data-silex-id="silex-id-1669835345525-235" style="">
                      <div class="silex-element-content normal">
                         <p>Healthcare</p>
                      </div>
                   </div>
                </div>
-               <div data-silex-type="container-element"
-                  class="editable-style container-element silex-id-1669835345525-236 job-card-skill-label"
-                  data-silex-id="silex-id-1669835345525-236" style="">
-                  <div data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669835345525-237 job-card-skill-text"
-                     data-silex-id="silex-id-1669835345525-237" style="">
+               <div data-silex-type="container-element" class="editable-style container-element silex-id-1669835345525-236 job-card-skill-label" data-silex-id="silex-id-1669835345525-236" style="">
+                  <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835345525-237 job-card-skill-text" data-silex-id="silex-id-1669835345525-237" style="">
                      <div class="silex-element-content normal">
                         <p>Empathy</p>
                      </div>
                   </div>
                </div>
-               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835345525-238"
-                  data-silex-id="silex-id-1669835345525-238" style=""><img src="../assets/healthcare_job_logo.svg"></div>
-               <div data-silex-type="text-element"
-                  class="editable-style text-element silex-id-1669835345525-239 job-card-pay-rate"
-                  data-silex-id="silex-id-1669835345525-239" style="">
+               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835345525-238" data-silex-id="silex-id-1669835345525-238" style=""><img src="../assets/healthcare_job_logo.svg"></div>
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835345525-239 job-card-pay-rate" data-silex-id="silex-id-1669835345525-239" style="">
                   <div class="silex-element-content normal">
                      <p>$50 - $100 / hr</p>
                   </div>
                </div>
-               <div data-silex-type="text-element"
-                  class="editable-style text-element silex-id-1669835345525-240 job-card-company"
-                  data-silex-id="silex-id-1669835345525-240" style="">
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835345525-240 job-card-company" data-silex-id="silex-id-1669835345525-240" style="">
                   <div class="silex-element-content normal">
                      <p>Trafalgar</p>
                   </div>
                </div>
-               <div data-silex-type="text-element"
-                  class="editable-style text-element silex-id-1669835345525-241 job-card-company"
-                  data-silex-id="silex-id-1669835345525-241" style="">
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835345525-241 job-card-company" data-silex-id="silex-id-1669835345525-241" style="">
                   <div class="silex-element-content normal">
                      <p>Delhi, India</p>
                   </div>
                </div>
-               <div data-silex-type="text-element"
-                  class="editable-style text-element silex-id-1669835345525-242 job-card-company"
-                  data-silex-id="silex-id-1669835345525-242" style="">
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835345525-242 job-card-company" data-silex-id="silex-id-1669835345525-242" style="">
                   <div class="silex-element-content normal">
                      <p>Delhi, India</p>
                   </div>
                </div>
-               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835345525-243"
-                  data-silex-id="silex-id-1669835345525-243" style=""><img src="../assets/vector_case_logo.svg"></div>
-               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835345525-244"
-                  data-silex-id="silex-id-1669835345525-244" style=""><img src="../assets/vector_location_logo.svg"></div>
-               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835345525-245 job-card-title"
-                  data-silex-id="silex-id-1669835345525-245" style="">
+               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835345525-243" data-silex-id="silex-id-1669835345525-243" style=""><img src="../assets/vector_case_logo.svg"></div>
+               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835345525-244" data-silex-id="silex-id-1669835345525-244" style=""><img src="../assets/vector_location_logo.svg"></div>
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835345525-245 job-card-title" data-silex-id="silex-id-1669835345525-245" style="">
                   <div class="silex-element-content normal">
                      <p>Healthcare Executive</p>
                   </div>
                </div>
-               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835345525-246"
-                  data-silex-id="silex-id-1669835345525-246" style=""><img src="../assets/vector_1_2.svg"></div>
-               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835345525-247"
-                  data-silex-id="silex-id-1669835345525-247" style=""><img src="../assets/vector_1_1.svg"></div>
-            </div>
-            <div id="publish-static-jobs4" data-silex-type="container-element"
-               class="editable-style container-element silex-id-1669835241022-129 job-card-container"
-               data-silex-id="silex-id-1669835241022-129" style="">
-               <div data-silex-type="container-element"
-                  class="editable-style container-element silex-id-1669835241022-130 job-card-skill-label"
-                  data-silex-id="silex-id-1669835241022-130" style="">
-                  <div data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669835241022-131 job-card-skill-text"
-                     data-silex-id="silex-id-1669835241022-131" style="">
+               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835345525-246" data-silex-id="silex-id-1669835345525-246" style=""><img src="../assets/vector_1_2.svg"></div>
+               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835345525-247" data-silex-id="silex-id-1669835345525-247" style=""><img src="../assets/vector_1_1.svg"></div>
+            </div><div id="publish-static-jobs4" data-silex-type="container-element" class="editable-style container-element silex-id-1669835241022-129 job-card-container" data-silex-id="silex-id-1669835241022-129" style="">
+               <div data-silex-type="container-element" class="editable-style container-element silex-id-1669835241022-130 job-card-skill-label" data-silex-id="silex-id-1669835241022-130" style="">
+                  <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835241022-131 job-card-skill-text" data-silex-id="silex-id-1669835241022-131" style="">
                      <div class="silex-element-content normal">
                         <p>Nursing</p>
                      </div>
                   </div>
                </div>
-               <div data-silex-type="container-element"
-                  class="editable-style container-element silex-id-1669835241022-132 job-card-skill-label"
-                  data-silex-id="silex-id-1669835241022-132" style="">
-                  <div data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669835241022-133 job-card-skill-text"
-                     data-silex-id="silex-id-1669835241022-133" style="">
+               <div data-silex-type="container-element" class="editable-style container-element silex-id-1669835241022-132 job-card-skill-label" data-silex-id="silex-id-1669835241022-132" style="">
+                  <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835241022-133 job-card-skill-text" data-silex-id="silex-id-1669835241022-133" style="">
                      <div class="silex-element-content normal">
                         <p>Healthcare</p>
                      </div>
                   </div>
                </div>
-               <div data-silex-type="container-element"
-                  class="editable-style container-element silex-id-1669835241023-134 job-card-skill-label"
-                  data-silex-id="silex-id-1669835241023-134" style="">
-                  <div data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669835241023-135 job-card-skill-text"
-                     data-silex-id="silex-id-1669835241023-135" style="">
+               <div data-silex-type="container-element" class="editable-style container-element silex-id-1669835241023-134 job-card-skill-label" data-silex-id="silex-id-1669835241023-134" style="">
+                  <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835241023-135 job-card-skill-text" data-silex-id="silex-id-1669835241023-135" style="">
                      <div class="silex-element-content normal">
                         <p>Empathy</p>
                      </div>
                   </div>
                </div>
-               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835241023-136"
-                  data-silex-id="silex-id-1669835241023-136" style=""><img src="../assets/healthcare_job_logo.svg"></div>
-               <div data-silex-type="text-element"
-                  class="editable-style text-element silex-id-1669835241023-137 job-card-pay-rate"
-                  data-silex-id="silex-id-1669835241023-137" style="">
+               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835241023-136" data-silex-id="silex-id-1669835241023-136" style=""><img src="../assets/healthcare_job_logo.svg"></div>
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835241023-137 job-card-pay-rate" data-silex-id="silex-id-1669835241023-137" style="">
                   <div class="silex-element-content normal">
                      <p>$50 - $100 / hr</p>
                   </div>
                </div>
-               <div data-silex-type="text-element"
-                  class="editable-style text-element silex-id-1669835241023-138 job-card-company"
-                  data-silex-id="silex-id-1669835241023-138" style="">
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835241023-138 job-card-company" data-silex-id="silex-id-1669835241023-138" style="">
                   <div class="silex-element-content normal">
                      <p>Trafalgar</p>
                   </div>
                </div>
-               <div data-silex-type="text-element"
-                  class="editable-style text-element silex-id-1669835241023-139 job-card-company"
-                  data-silex-id="silex-id-1669835241023-139" style="">
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835241023-139 job-card-company" data-silex-id="silex-id-1669835241023-139" style="">
                   <div class="silex-element-content normal">
                      <p>Delhi, India</p>
                   </div>
                </div>
-               <div data-silex-type="text-element"
-                  class="editable-style text-element silex-id-1669835241023-140 job-card-company"
-                  data-silex-id="silex-id-1669835241023-140" style="">
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835241023-140 job-card-company" data-silex-id="silex-id-1669835241023-140" style="">
                   <div class="silex-element-content normal">
                      <p>Delhi, India</p>
                   </div>
                </div>
-               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835241023-141"
-                  data-silex-id="silex-id-1669835241023-141" style=""><img src="../assets/vector_case_logo.svg"></div>
-               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835241023-142"
-                  data-silex-id="silex-id-1669835241023-142" style=""><img src="../assets/vector_location_logo.svg"></div>
-               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835241023-143 job-card-title"
-                  data-silex-id="silex-id-1669835241023-143" style="">
+               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835241023-141" data-silex-id="silex-id-1669835241023-141" style=""><img src="../assets/vector_case_logo.svg"></div>
+               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835241023-142" data-silex-id="silex-id-1669835241023-142" style=""><img src="../assets/vector_location_logo.svg"></div>
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835241023-143 job-card-title" data-silex-id="silex-id-1669835241023-143" style="">
                   <div class="silex-element-content normal">
                      <p>Healthcare Executive</p>
                   </div>
                </div>
-               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835241023-144"
-                  data-silex-id="silex-id-1669835241023-144" style=""><img src="../assets/vector_1_2.svg"></div>
-               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835241023-145"
-                  data-silex-id="silex-id-1669835241023-145" style=""><img src="../assets/vector_1_1.svg"></div>
-            </div>
-            <div id="publish-static-jobs5" data-silex-type="container-element"
-               class="editable-style container-element silex-id-1669835282258-163 job-card-container"
-               data-silex-id="silex-id-1669835282258-163" style="">
-               <div data-silex-type="container-element"
-                  class="editable-style container-element silex-id-1669835282258-164 job-card-skill-label"
-                  data-silex-id="silex-id-1669835282258-164" style="">
-                  <div data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669835282258-165 job-card-skill-text"
-                     data-silex-id="silex-id-1669835282258-165" style="">
+               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835241023-144" data-silex-id="silex-id-1669835241023-144" style=""><img src="../assets/vector_1_2.svg"></div>
+               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835241023-145" data-silex-id="silex-id-1669835241023-145" style=""><img src="../assets/vector_1_1.svg"></div>
+            </div><div id="publish-static-jobs5" data-silex-type="container-element" class="editable-style container-element silex-id-1669835282258-163 job-card-container" data-silex-id="silex-id-1669835282258-163" style="">
+               <div data-silex-type="container-element" class="editable-style container-element silex-id-1669835282258-164 job-card-skill-label" data-silex-id="silex-id-1669835282258-164" style="">
+                  <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835282258-165 job-card-skill-text" data-silex-id="silex-id-1669835282258-165" style="">
                      <div class="silex-element-content normal">
                         <p>Nursing</p>
                      </div>
                   </div>
                </div>
-               <div data-silex-type="container-element"
-                  class="editable-style container-element silex-id-1669835282258-166 job-card-skill-label"
-                  data-silex-id="silex-id-1669835282258-166" style="">
-                  <div data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669835282258-167 job-card-skill-text"
-                     data-silex-id="silex-id-1669835282258-167" style="">
+               <div data-silex-type="container-element" class="editable-style container-element silex-id-1669835282258-166 job-card-skill-label" data-silex-id="silex-id-1669835282258-166" style="">
+                  <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835282258-167 job-card-skill-text" data-silex-id="silex-id-1669835282258-167" style="">
                      <div class="silex-element-content normal">
                         <p>Healthcare</p>
                      </div>
                   </div>
                </div>
-               <div data-silex-type="container-element"
-                  class="editable-style container-element silex-id-1669835282258-168 job-card-skill-label"
-                  data-silex-id="silex-id-1669835282258-168" style="">
-                  <div data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669835282258-169 job-card-skill-text"
-                     data-silex-id="silex-id-1669835282258-169" style="">
+               <div data-silex-type="container-element" class="editable-style container-element silex-id-1669835282258-168 job-card-skill-label" data-silex-id="silex-id-1669835282258-168" style="">
+                  <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835282258-169 job-card-skill-text" data-silex-id="silex-id-1669835282258-169" style="">
                      <div class="silex-element-content normal">
                         <p>Empathy</p>
                      </div>
                   </div>
                </div>
-               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835282258-170"
-                  data-silex-id="silex-id-1669835282258-170" style=""><img src="../assets/healthcare_job_logo.svg"></div>
-               <div data-silex-type="text-element"
-                  class="editable-style text-element silex-id-1669835282258-171 job-card-pay-rate"
-                  data-silex-id="silex-id-1669835282258-171" style="">
+               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835282258-170" data-silex-id="silex-id-1669835282258-170" style=""><img src="../assets/healthcare_job_logo.svg"></div>
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835282258-171 job-card-pay-rate" data-silex-id="silex-id-1669835282258-171" style="">
                   <div class="silex-element-content normal">
                      <p>$50 - $100 / hr</p>
                   </div>
                </div>
-               <div data-silex-type="text-element"
-                  class="editable-style text-element silex-id-1669835282258-172 job-card-company"
-                  data-silex-id="silex-id-1669835282258-172" style="">
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835282258-172 job-card-company" data-silex-id="silex-id-1669835282258-172" style="">
                   <div class="silex-element-content normal">
                      <p>Trafalgar</p>
                   </div>
                </div>
-               <div data-silex-type="text-element"
-                  class="editable-style text-element silex-id-1669835282258-173 job-card-company"
-                  data-silex-id="silex-id-1669835282258-173" style="">
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835282258-173 job-card-company" data-silex-id="silex-id-1669835282258-173" style="">
                   <div class="silex-element-content normal">
                      <p>Delhi, India</p>
                   </div>
                </div>
-               <div data-silex-type="text-element"
-                  class="editable-style text-element silex-id-1669835282258-174 job-card-company"
-                  data-silex-id="silex-id-1669835282258-174" style="">
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835282258-174 job-card-company" data-silex-id="silex-id-1669835282258-174" style="">
                   <div class="silex-element-content normal">
                      <p>Delhi, India</p>
                   </div>
                </div>
-               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835282258-175"
-                  data-silex-id="silex-id-1669835282258-175" style=""><img src="../assets/vector_case_logo.svg"></div>
-               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835282258-176"
-                  data-silex-id="silex-id-1669835282258-176" style=""><img src="../assets/vector_location_logo.svg"></div>
-               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835282258-177 job-card-title"
-                  data-silex-id="silex-id-1669835282258-177" style="">
+               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835282258-175" data-silex-id="silex-id-1669835282258-175" style=""><img src="../assets/vector_case_logo.svg"></div>
+               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835282258-176" data-silex-id="silex-id-1669835282258-176" style=""><img src="../assets/vector_location_logo.svg"></div>
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835282258-177 job-card-title" data-silex-id="silex-id-1669835282258-177" style="">
                   <div class="silex-element-content normal">
                      <p>Healthcare Executive</p>
                   </div>
                </div>
-               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835282258-178"
-                  data-silex-id="silex-id-1669835282258-178" style=""><img src="../assets/vector_1_2.svg"></div>
-               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835282258-179"
-                  data-silex-id="silex-id-1669835282258-179" style=""><img src="../assets/vector_1_1.svg"></div>
-            </div>
-            <div id="publish-static-jobs6" data-silex-type="container-element"
-               class="editable-style container-element silex-id-1669835313830-197 job-card-container"
-               data-silex-id="silex-id-1669835313830-197" style="">
-               <div data-silex-type="container-element"
-                  class="editable-style container-element silex-id-1669835313830-198 job-card-skill-label"
-                  data-silex-id="silex-id-1669835313830-198" style="">
-                  <div data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669835313830-199 job-card-skill-text"
-                     data-silex-id="silex-id-1669835313830-199" style="">
+               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835282258-178" data-silex-id="silex-id-1669835282258-178" style=""><img src="../assets/vector_1_2.svg"></div>
+               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835282258-179" data-silex-id="silex-id-1669835282258-179" style=""><img src="../assets/vector_1_1.svg"></div>
+            </div><div id="publish-static-jobs6" data-silex-type="container-element" class="editable-style container-element silex-id-1669835313830-197 job-card-container" data-silex-id="silex-id-1669835313830-197" style="">
+               <div data-silex-type="container-element" class="editable-style container-element silex-id-1669835313830-198 job-card-skill-label" data-silex-id="silex-id-1669835313830-198" style="">
+                  <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835313830-199 job-card-skill-text" data-silex-id="silex-id-1669835313830-199" style="">
                      <div class="silex-element-content normal">
                         <p>Nursing</p>
                      </div>
                   </div>
                </div>
-               <div data-silex-type="container-element"
-                  class="editable-style container-element silex-id-1669835313830-200 job-card-skill-label"
-                  data-silex-id="silex-id-1669835313830-200" style="">
-                  <div data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669835313830-201 job-card-skill-text"
-                     data-silex-id="silex-id-1669835313830-201" style="">
+               <div data-silex-type="container-element" class="editable-style container-element silex-id-1669835313830-200 job-card-skill-label" data-silex-id="silex-id-1669835313830-200" style="">
+                  <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835313830-201 job-card-skill-text" data-silex-id="silex-id-1669835313830-201" style="">
                      <div class="silex-element-content normal">
                         <p>Healthcare</p>
                      </div>
                   </div>
                </div>
-               <div data-silex-type="container-element"
-                  class="editable-style container-element silex-id-1669835313830-202 job-card-skill-label"
-                  data-silex-id="silex-id-1669835313830-202" style="">
-                  <div data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669835313830-203 job-card-skill-text"
-                     data-silex-id="silex-id-1669835313830-203" style="">
+               <div data-silex-type="container-element" class="editable-style container-element silex-id-1669835313830-202 job-card-skill-label" data-silex-id="silex-id-1669835313830-202" style="">
+                  <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835313830-203 job-card-skill-text" data-silex-id="silex-id-1669835313830-203" style="">
                      <div class="silex-element-content normal">
                         <p>Empathy</p>
                      </div>
                   </div>
                </div>
-               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835313830-204"
-                  data-silex-id="silex-id-1669835313830-204" style=""><img src="../assets/healthcare_job_logo.svg"></div>
-               <div data-silex-type="text-element"
-                  class="editable-style text-element silex-id-1669835313830-205 job-card-pay-rate"
-                  data-silex-id="silex-id-1669835313830-205" style="">
+               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835313830-204" data-silex-id="silex-id-1669835313830-204" style=""><img src="../assets/healthcare_job_logo.svg"></div>
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835313830-205 job-card-pay-rate" data-silex-id="silex-id-1669835313830-205" style="">
                   <div class="silex-element-content normal">
                      <p>$50 - $100 / hr</p>
                   </div>
                </div>
-               <div data-silex-type="text-element"
-                  class="editable-style text-element silex-id-1669835313830-206 job-card-company"
-                  data-silex-id="silex-id-1669835313830-206" style="">
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835313830-206 job-card-company" data-silex-id="silex-id-1669835313830-206" style="">
                   <div class="silex-element-content normal">
                      <p>Trafalgar</p>
                   </div>
                </div>
-               <div data-silex-type="text-element"
-                  class="editable-style text-element silex-id-1669835313830-207 job-card-company"
-                  data-silex-id="silex-id-1669835313830-207" style="">
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835313830-207 job-card-company" data-silex-id="silex-id-1669835313830-207" style="">
                   <div class="silex-element-content normal">
                      <p>Delhi, India</p>
                   </div>
                </div>
-               <div data-silex-type="text-element"
-                  class="editable-style text-element silex-id-1669835313830-208 job-card-company"
-                  data-silex-id="silex-id-1669835313830-208" style="">
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835313830-208 job-card-company" data-silex-id="silex-id-1669835313830-208" style="">
                   <div class="silex-element-content normal">
                      <p>Delhi, India</p>
                   </div>
                </div>
-               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835313830-209"
-                  data-silex-id="silex-id-1669835313830-209" style=""><img src="../assets/vector_case_logo.svg"></div>
-               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835313830-210"
-                  data-silex-id="silex-id-1669835313830-210" style=""><img src="../assets/vector_location_logo.svg"></div>
-               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835313830-211 job-card-title"
-                  data-silex-id="silex-id-1669835313830-211" style="">
+               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835313830-209" data-silex-id="silex-id-1669835313830-209" style=""><img src="../assets/vector_case_logo.svg"></div>
+               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835313830-210" data-silex-id="silex-id-1669835313830-210" style=""><img src="../assets/vector_location_logo.svg"></div>
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669835313830-211 job-card-title" data-silex-id="silex-id-1669835313830-211" style="">
                   <div class="silex-element-content normal">
                      <p>Healthcare Executive</p>
                   </div>
                </div>
-               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835313830-212"
-                  data-silex-id="silex-id-1669835313830-212" style=""><img src="../assets/vector_1_2.svg"></div>
-               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835313830-213"
-                  data-silex-id="silex-id-1669835313830-213" style=""><img src="../assets/vector_1_1.svg"></div>
-            </div>
-            <div id="hello-react"></div>
-            <div data-silex-type="image-element" class="editable-style image-element silex-id-1669815956867-0"
-               data-silex-id="silex-id-1669815956867-0" style=""><img src="../assets/usman-yousaf-pTrhfmj2jDA-unsplash%201.png">
-            </div>
-            <div data-silex-type="image-element" class="editable-style image-element silex-id-1669816765521-1"
-               data-silex-id="silex-id-1669816765521-1" style=""><img src="../assets/usman-yousaf-2.png"></div>
-            <div data-silex-type="container-element" class="editable-style container-element silex-id-1669827582934-3"
-               data-silex-id="silex-id-1669827582934-3" style="">
-               <div data-silex-type="container-element"
-                  class="editable-style container-element silex-id-1669828022899-6 rectangle-simple"
-                  data-silex-id="silex-id-1669828022899-6" style=""></div>
-               <div data-silex-type="container-element"
-                  class="editable-style container-element silex-id-1669836835068-0 rectangle-simple"
-                  data-silex-id="silex-id-1669836835068-0" style=""></div>
-               <div data-silex-type="container-element"
-                  class="editable-style container-element silex-id-1669827786418-4 rectangle-simple"
-                  data-silex-id="silex-id-1669827786418-4" style=""></div>
-            </div>
-            <div data-silex-type="text-element" class="editable-style text-element silex-id-1669825970013-2 h1-title"
-               data-silex-id="silex-id-1669825970013-2" style="">
+               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835313830-212" data-silex-id="silex-id-1669835313830-212" style=""><img src="../assets/vector_1_2.svg"></div>
+               <div data-silex-type="image-element" class="editable-style image-element silex-id-1669835313830-213" data-silex-id="silex-id-1669835313830-213" style=""><img src="../assets/vector_1_1.svg"></div>
+            </div><div data-silex-type="image-element" class="editable-style image-element silex-id-1669815956867-0" data-silex-id="silex-id-1669815956867-0" style=""><img src="../assets/usman-yousaf-pTrhfmj2jDA-unsplash%201.png">
+            </div><div data-silex-type="image-element" class="editable-style image-element silex-id-1669816765521-1" data-silex-id="silex-id-1669816765521-1" style=""><img src="../assets/usman-yousaf-2.png"></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1669825970013-2 h1-title" data-silex-id="silex-id-1669825970013-2" style="">
                <div class="silex-element-content normal">
                   <p>Providing Best HealthCare Jobs</p>
                </div>
-            </div>
-            <a data-silex-type="container-element"
-               class="editable-style container-element silex-id-1669826794847-0 book-consultation-btn"
-               data-silex-id="silex-id-1669826794847-0" href="book_online_consultation" style="">
-               <div data-silex-type="text-element"
-                  class="editable-style text-element silex-id-1669826987326-1 book-consultation-btn-label"
-                  data-silex-id="silex-id-1669826987326-1" style="">
+            </div><a data-silex-type="container-element" class="editable-style container-element silex-id-1669826794847-0 book-consultation-btn" data-silex-id="silex-id-1669826794847-0" href="book_online_consultation" style="">
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669826987326-1 book-consultation-btn-label" data-silex-id="silex-id-1669826987326-1" style="">
                   <div class="silex-element-content normal">
                      <p>Book Online Consultation</p>
                   </div>
                </div>
-            </a>
-            <div data-silex-type="text-element" class="editable-style text-element silex-id-1669891065904-0 why-title"
-               data-silex-id="silex-id-1669891065904-0">
+            </a><div data-silex-type="text-element" class="editable-style text-element silex-id-1669891065904-0 why-title" data-silex-id="silex-id-1669891065904-0">
                <div class="silex-element-content normal">
                   <p>Why Swasthu?</p>
-                  <span class="_wysihtml-temp-caret-fix"
-                     style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span>
+                  <span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span>
                </div>
-            </div>
-            <div data-silex-type="text-element" class="editable-style text-element silex-id-1669892369634-1 why-text-content"
-               data-silex-id="silex-id-1669892369634-1">
+            </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1669892369634-1 why-text-content" data-silex-id="silex-id-1669892369634-1">
                <div class="silex-element-content normal">
                   <p>Lorem ipsum de color iss slsysos kshss sshdusk hbnjfyo ckdhdoi</p>
                </div>
-            </div>
-            <div data-silex-type="image-element" class="editable-style image-element silex-id-1669892968101-0"
-               data-silex-id="silex-id-1669892968101-0" style=""><img src="../assets/dr-avatar.png"></div>
-            <div data-silex-type="text-element" class="editable-style text-element silex-id-1669893305792-1 curated-dr-title"
-               data-silex-id="silex-id-1669893305792-1">
+            </div><div data-silex-type="image-element" class="editable-style image-element silex-id-1669892968101-0" data-silex-id="silex-id-1669892968101-0" style=""><img src="../assets/dr-avatar.png"></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1669893305792-1 curated-dr-title" data-silex-id="silex-id-1669893305792-1">
                <div class="silex-element-content normal">
                   <p>Curated Doctors</p>
                </div>
-            </div>
-            <div data-silex-type="text-element" class="editable-style text-element silex-id-1669893405487-2 curated-dr-content"
-               data-silex-id="silex-id-1669893405487-2" style="">
+            </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1669893405487-2 curated-dr-content" data-silex-id="silex-id-1669893405487-2" style="">
                <div class="silex-element-content normal">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna gravida
                      id lobortis eget tristique ultrices feugiat neque elit. Amet imperdiet donec cras habitant ultrices sed in mi
@@ -2472,251 +478,157 @@
                      viverra in. In morbi vehicula dignissim pharetra, tristique. 
                   </p>
                </div>
-            </div>
-            <div data-silex-type="image-element" class="editable-style image-element silex-id-1669893656139-3"
-               data-silex-id="silex-id-1669893656139-3" style=""><img src="../assets/mbl_img.png"></div>
-            <div data-silex-type="text-element" class="editable-style text-element silex-id-1669894542514-4 download-app-title"
-               data-silex-id="silex-id-1669894542514-4" style="">
+            </div><div data-silex-type="image-element" class="editable-style image-element silex-id-1669893656139-3" data-silex-id="silex-id-1669893656139-3" style=""><img src="../assets/mbl_img.png"></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1669894542514-4 download-app-title" data-silex-id="silex-id-1669894542514-4" style="">
                <div class="silex-element-content normal">
                   <p>Download our App</p>
                </div>
-            </div>
-            <div data-silex-type="text-element"
-               class="editable-style text-element silex-id-1669895961763-6 download-app-content"
-               data-silex-id="silex-id-1669895961763-6" style="">
+            </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1669895961763-6 download-app-content" data-silex-id="silex-id-1669895961763-6" style="">
                <div class="silex-element-content normal">
                   <p>Access video consultation with India’s top doctors on the Swasthu
                      mobile Application. Connect with doctors online from the comfort of your home.
                   </p>
                </div>
-            </div>
-            <a data-silex-type="image-element" class="editable-style image-element silex-id-1669896474946-7"
-               data-silex-id="silex-id-1669896474946-7" style="" href="google_play"><img src="../assets/google-play.svg"></a><a
-               data-silex-type="image-element" class="editable-style image-element silex-id-1669896543125-9"
-               data-silex-id="silex-id-1669896543125-9" style="" href="apple_store"><img src="../assets/apple-play.svg"></a>
-            <div data-silex-type="text-element"
-               class="editable-style text-element silex-id-1669896788218-10 user-feedback-title"
-               data-silex-id="silex-id-1669896788218-10">
+            </div><a data-silex-type="image-element" class="editable-style image-element silex-id-1669896474946-7" data-silex-id="silex-id-1669896474946-7" style="" href="google_play"><img src="../assets/google-play.svg"></a><a data-silex-type="image-element" class="editable-style image-element silex-id-1669896543125-9" data-silex-id="silex-id-1669896543125-9" style="" href="apple_store"><img src="../assets/apple-play.svg"></a><div data-silex-type="text-element" class="editable-style text-element silex-id-1669896788218-10 user-feedback-title" data-silex-id="silex-id-1669896788218-10">
                <div class="silex-element-content normal">
                   <p>What our user say about us</p>
                </div>
-            </div>
-            <div data-silex-type="text-element"
-               class="editable-style text-element silex-id-1669896927684-11 user-feedback-content"
-               data-silex-id="silex-id-1669896927684-11">
+            </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1669896927684-11 user-feedback-content" data-silex-id="silex-id-1669896927684-11">
                <div class="silex-element-content normal">
                   <p>Lorem ipsum de color iss slsysos kshss sshdusk hbnjfyo ckdhdoi</p>
                </div>
-            </div>
-            <div data-silex-type="text-element" class="editable-style text-element silex-id-1669897100217-12 user-feedback"
-               data-silex-id="silex-id-1669897100217-12" style="">
-               <div class="silex-element-content normal">
-                  <p>Very easy to book,maintain history. Hassle free from older versions
-                     of booking appointment via telephone.. Thanks Practo for making it simple.
-                  </p>
-               </div>
-            </div>
-            <div data-silex-type="image-element" class="editable-style image-element silex-id-1669897350030-13"
-               data-silex-id="silex-id-1669897350030-13" style=""><img src="../assets/arrow-left.svg"></div>
-            <div data-silex-type="image-element" class="editable-style image-element silex-id-1669897397375-14"
-               data-silex-id="silex-id-1669897397375-14" style=""><img src="../assets/arrow-right.svg"></div>
-         </div>
-         <a data-silex-type="container-element"
-            class="editable-style container-element silex-id-1669837259365-3 book-consultation-btn"
-            data-silex-id="silex-id-1669837259365-3" style="" href="view_all_jobs">
-            <div data-silex-type="text-element"
-               class="editable-style text-element silex-id-1669837259365-4 book-consultation-btn-label"
-               data-silex-id="silex-id-1669837259365-4" style="">
-               <div class="silex-element-content normal">
-                  <p>View All</p>
-               </div>
-            </div>
-         </a>
-      </section>
-      <section data-silex-type="container-element"
-         class="editable-style section-element silex-id-1669897645387-15 page-page-1 paged-element"
-         data-silex-id="silex-id-1669897645387-15">
-         <div data-silex-type="container-element"
-            class="editable-style container-element silex-id-1669897645388-16 silex-element-content website-width prevent-draggable"
-            data-silex-id="silex-id-1669897645388-16">
-            <div data-silex-type="container-element" class="editable-style container-element silex-id-1669897697178-17"
-               data-silex-id="silex-id-1669897697178-17" style="">
-               <div data-silex-type="text-element"
-                  class="editable-style text-element silex-id-1669898190202-18 footer-update-title"
-                  data-silex-id="silex-id-1669898190202-18">
+            </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1669897100217-12 user-feedback" data-silex-id="silex-id-1669897100217-12" style="">
+               <div class="silex-element-content normal">“Very easy to book,maintain history. Hassle free from older versions of booking appointment via telephone.. Thanks Practo for making it simple.”     </div>
+            </div></div></section>
+      <section data-silex-type="container-element" class="editable-style section-element silex-id-1669897645387-15 page-page-1 paged-element" data-silex-id="silex-id-1669897645387-15">
+         <div data-silex-type="container-element" class="editable-style container-element silex-id-1669897645388-16 silex-element-content website-width prevent-draggable" data-silex-id="silex-id-1669897645388-16">
+            <div data-silex-type="container-element" class="editable-style container-element silex-id-1669897697178-17" data-silex-id="silex-id-1669897697178-17" style="">
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669898190202-18 footer-update-title" data-silex-id="silex-id-1669898190202-18">
                   <div class="silex-element-content normal">
                      <p>Get an update every week<br></p>
                   </div>
                </div>
-               <div data-silex-type="text-element"
-                  class="editable-style text-element silex-id-1669898596819-19 footer-update-content"
-                  data-silex-id="silex-id-1669898596819-19" style="">
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669898596819-19 footer-update-content" data-silex-id="silex-id-1669898596819-19" style="">
                   <div class="silex-element-content normal">
                      <p>Livedoc was created in order to improve the patient experience.
                         Providing world-class tests, and a wide range of other services.
                      </p>
                   </div>
                </div>
-               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669898776055-20 subscribe-title"
-                  data-silex-id="silex-id-1669898776055-20" style="">
+               <div data-silex-type="text-element" class="editable-style text-element silex-id-1669898776055-20 subscribe-title" data-silex-id="silex-id-1669898776055-20" style="">
                   <div class="silex-element-content normal">SUBSCRIBE TO NEWS LETTER</div>
                </div>
-               <div data-silex-type="container-element"
-                  class="editable-style container-element silex-id-1669899028076-21 email-input"
-                  data-silex-id="silex-id-1669899028076-21" style="">
-                  <div data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669901038396-0 email-input-label"
-                     data-silex-id="silex-id-1669901038396-0" style="">
+               <div data-silex-type="container-element" class="editable-style container-element silex-id-1669899028076-21 email-input" data-silex-id="silex-id-1669899028076-21" style="">
+                  <div data-silex-type="text-element" class="editable-style text-element silex-id-1669901038396-0 email-input-label" data-silex-id="silex-id-1669901038396-0" style="">
                      <div class="silex-element-content normal">
                         <p>Email</p>
                      </div>
                   </div>
                </div>
-               <a data-silex-type="container-element"
-                  class="editable-style container-element silex-id-1669901639624-1 subscribe-btn"
-                  data-silex-id="silex-id-1669901639624-1" style="" href="subscribe">
-                  <div data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669901890830-2 subscribe-btn-label"
-                     data-silex-id="silex-id-1669901890830-2" style="">
+               <a data-silex-type="container-element" class="editable-style container-element silex-id-1669901639624-1 subscribe-btn" data-silex-id="silex-id-1669901639624-1" style="" href="subscribe">
+                  <div data-silex-type="text-element" class="editable-style text-element silex-id-1669901890830-2 subscribe-btn-label" data-silex-id="silex-id-1669901890830-2" style="">
                      <div class="silex-element-content normal">
                         <p>Subscribe</p>
                      </div>
                   </div>
                </a>
-               <div data-silex-type="container-element" class="editable-style container-element silex-id-1669902180899-4"
-                  data-silex-id="silex-id-1669902180899-4" style="">
-                  <div data-silex-type="image-element" class="editable-style image-element silex-id-1669902103702-3"
-                     data-silex-id="silex-id-1669902103702-3" style=""><img src="../assets/site-logo-2.svg"></div>
-                  <div data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669902552127-5 footer-link-header-1"
-                     data-silex-id="silex-id-1669902552127-5" style="">
+               <div data-silex-type="container-element" class="editable-style container-element silex-id-1669902180899-4" data-silex-id="silex-id-1669902180899-4" style="">
+                  <div data-silex-type="image-element" class="editable-style image-element silex-id-1669902103702-3" data-silex-id="silex-id-1669902103702-3" style=""><img src="../assets/site-logo-2.svg"></div>
+                  <div data-silex-type="text-element" class="editable-style text-element silex-id-1669902552127-5 footer-link-header-1" data-silex-id="silex-id-1669902552127-5" style="">
                      <div class="silex-element-content normal">
                         <p>Quick Links</p>
                      </div>
                   </div>
-                  <a data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669902810056-7 footer-link-item text-decoration"
-                     data-silex-id="silex-id-1669902810056-7" style="" href="about_us">
+                  <a data-silex-type="text-element" class="editable-style text-element silex-id-1669902810056-7 footer-link-item text-decoration" data-silex-id="silex-id-1669902810056-7" style="" href="about_us">
                      <div class="silex-element-content normal">
                         <p>About us</p>
                      </div>
                   </a>
-                  <a data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669902833379-9 footer-link-item text-decoration"
-                     data-silex-id="silex-id-1669902833379-9" style="" href="membership">
+                  <a data-silex-type="text-element" class="editable-style text-element silex-id-1669902833379-9 footer-link-item text-decoration" data-silex-id="silex-id-1669902833379-9" style="" href="membership">
                      <div class="silex-element-content normal">
                         <p>Membership</p>
                      </div>
                   </a>
-                  <div data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669902964008-11 footer-link-header-1"
-                     data-silex-id="silex-id-1669902964008-11" style="">
+                  <div data-silex-type="text-element" class="editable-style text-element silex-id-1669902964008-11 footer-link-header-1" data-silex-id="silex-id-1669902964008-11" style="">
                      <div class="silex-element-content normal">
                         <p>Departments</p>
                      </div>
                   </div>
-                  <a data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669902680127-6 footer-link-item text-decoration"
-                     data-silex-id="silex-id-1669902680127-6" style="" href="how_works">
+                  <a data-silex-type="text-element" class="editable-style text-element silex-id-1669902680127-6 footer-link-item text-decoration" data-silex-id="silex-id-1669902680127-6" style="" href="how_works">
                      <div class="silex-element-content normal">
                         <p>How it works</p>
                      </div>
                   </a>
-                  <a data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669903035039-13 footer-link-item text-decoration"
-                     data-silex-id="silex-id-1669903035039-13" style="" href="eye_care">
+                  <a data-silex-type="text-element" class="editable-style text-element silex-id-1669903035039-13 footer-link-item text-decoration" data-silex-id="silex-id-1669903035039-13" style="" href="eye_care">
                      <div class="silex-element-content normal">
                         <p>Eye care</p>
                      </div>
                   </a>
-                  <div data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669903149566-17 footer-link-item text-decoration"
-                     data-silex-id="silex-id-1669903149566-17" style="">
+                  <div data-silex-type="text-element" class="editable-style text-element silex-id-1669903149566-17 footer-link-item text-decoration" data-silex-id="silex-id-1669903149566-17" style="">
                      <div class="silex-element-content normal">
                         <p>Heart care</p>
                      </div>
                   </div>
-                  <div data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669903095831-15 footer-link-item text-decoration"
-                     data-silex-id="silex-id-1669903095831-15" style="">
+                  <div data-silex-type="text-element" class="editable-style text-element silex-id-1669903095831-15 footer-link-item text-decoration" data-silex-id="silex-id-1669903095831-15" style="">
                      <div class="silex-element-content normal">
                         <p>Cardiac care</p>
                      </div>
                   </div>
-                  <div data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669903234703-19 footer-link-header-1"
-                     data-silex-id="silex-id-1669903234703-19" style="">
+                  <div data-silex-type="text-element" class="editable-style text-element silex-id-1669903234703-19 footer-link-header-1" data-silex-id="silex-id-1669903234703-19" style="">
                      <div class="silex-element-content normal">
                         <p>Eye Care</p>
                      </div>
                   </div>
-                  <a data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669903344046-21 footer-link-item text-decoration"
-                     data-silex-id="silex-id-1669903344046-21" style="" href="general_med">
+                  <a data-silex-type="text-element" class="editable-style text-element silex-id-1669903344046-21 footer-link-item text-decoration" data-silex-id="silex-id-1669903344046-21" style="" href="general_med">
                      <div class="silex-element-content normal">
                         <p>General Medecine</p>
                      </div>
                   </a>
-                  <div data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669903356484-23 footer-link-item text-decoration"
-                     data-silex-id="silex-id-1669903356484-23" style="">
+                  <div data-silex-type="text-element" class="editable-style text-element silex-id-1669903356484-23 footer-link-item text-decoration" data-silex-id="silex-id-1669903356484-23" style="">
                      <div class="silex-element-content normal">
                         <p>Orthopaedic</p>
                      </div>
                   </div>
-                  <div data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669903372060-25 footer-link-item text-decoration"
-                     data-silex-id="silex-id-1669903372060-25" style="">
+                  <div data-silex-type="text-element" class="editable-style text-element silex-id-1669903372060-25 footer-link-item text-decoration" data-silex-id="silex-id-1669903372060-25" style="">
                      <div class="silex-element-content normal">
                         <p>Heart care</p>
                      </div>
                   </div>
-                  <div data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669903501073-27 footer-link-header-1"
-                     data-silex-id="silex-id-1669903501073-27" style="">
+                  <div data-silex-type="text-element" class="editable-style text-element silex-id-1669903501073-27 footer-link-header-1" data-silex-id="silex-id-1669903501073-27" style="">
                      <div class="silex-element-content normal">
                         <p>Customer Care</p>
                      </div>
                   </div>
-                  <a data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669903575017-31 footer-link-item text-decoration"
-                     data-silex-id="silex-id-1669903575017-31" style="" href="about_us">
+                  <a data-silex-type="text-element" class="editable-style text-element silex-id-1669903575017-31 footer-link-item text-decoration" data-silex-id="silex-id-1669903575017-31" style="" href="about_us">
                      <div class="silex-element-content normal">
                         <p>About Us</p>
                      </div>
                   </a>
-                  <a data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669903585639-33 footer-link-item text-decoration"
-                     data-silex-id="silex-id-1669903585639-33" style="" href="contact_us">
+                  <a data-silex-type="text-element" class="editable-style text-element silex-id-1669903585639-33 footer-link-item text-decoration" data-silex-id="silex-id-1669903585639-33" style="" href="contact_us">
                      <div class="silex-element-content normal">
                         <p>Contact Us</p>
                      </div>
                   </a>
-                  <div data-silex-type="text-element"
-                     class="editable-style text-element silex-id-1669903600705-35 footer-link-item text-decoration"
-                     data-silex-id="silex-id-1669903600705-35" style="">
+                  <div data-silex-type="text-element" class="editable-style text-element silex-id-1669903600705-35 footer-link-item text-decoration" data-silex-id="silex-id-1669903600705-35" style="">
                      <div class="silex-element-content normal">
                         <p>Send Details</p>
                      </div>
                   </div>
                </div>
-               <a data-silex-type="text-element"
-                  class="editable-style text-element silex-id-1669903898784-38 privacy-policy-link text-decoration"
-                  data-silex-id="silex-id-1669903898784-38" style="" href="privacy_policy">
+               <a data-silex-type="text-element" class="editable-style text-element silex-id-1669903898784-38 privacy-policy-link text-decoration" data-silex-id="silex-id-1669903898784-38" style="" href="privacy_policy">
                   <div class="silex-element-content normal">
                      <p>Privacy Policy</p>
                   </div>
                </a>
             </div>
-            <div data-silex-type="text-element" class="editable-style text-element silex-id-1669903718522-37 footer-text"
-               data-silex-id="silex-id-1669903718522-37" style="">
+            <div data-silex-type="text-element" class="editable-style text-element silex-id-1669903718522-37 footer-text" data-silex-id="silex-id-1669903718522-37" style="">
                <div class="silex-element-content normal">
                   <p>All rights Reserved © Swasthu.com, 2021</p>
                </div>
             </div>
          </div>
       </section>
-      <script src="/js/js/it_template_joblist.js" defer></script>
-      <script src="/js/js/search.js" defer></script>
-   </body>
-</html>
+      <script src="../../../../../js/js/it_template_joblist.js" defer="" type="text/javascript"></script>
+      <script src="../../../../../js/js/search.js" defer="" type="text/javascript"></script>
+   
+
+</body></html>
